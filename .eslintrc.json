@@ -1,0 +1,17 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021
+  },
+  "rules": {
+    "no-unused-vars": "error",
+    "no-undef": "error",
+    "no-console": "warn",
+    "eqeqeq": ["error", "always"],
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"]
+  }
+}

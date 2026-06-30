@@ -22,7 +22,9 @@
     "build": "node build",
     "build:watch": "nodemon --watch build.js --watch templates -e js,md,html build.js",
     "start": "node index",
-    "test": "node test/app"
+    "test": "node test/app",
+    "test:coverage": "nyc --reporter=text --reporter=lcov --branches=80 --functions=80 --lines=80 node test/app",
+    "lint": "eslint src test index.js"
   },
   "dependencies": {
     "clone": "^2.1.2",
@@ -31,8 +33,10 @@
   },
   "devDependencies": {
     "Faker": "~0.7.2",
+    "eslint": "^8.57.0",
     "husky": "^4.2.2",
     "nodemon": "^2.0.2",
+    "nyc": "^15.1.0",
     "pupa": "^2.0.1",
     "rosie": "~2.0.1",
     "showdown": "^1.9.1",
@@ -41,12 +45,12 @@
     "underscore": "~1.12.1"
   },
   "engines": {
-    "node": "14.x"
+    "node": ">=20.0.0"
   },
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "npm run lint && npm test"
     }
   }
 }
