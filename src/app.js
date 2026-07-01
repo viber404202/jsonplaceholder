@@ -1,6 +1,8 @@
 const jsonServer = require('json-server')
 const clone = require('clone')
+const swaggerUi = require('swagger-ui-express')
 const data = require('../data.json')
+const openApiSpec = require('./openapi')
 
 const app = jsonServer.create()
 const router = jsonServer.router(clone(data), { _isFake: true })
@@ -13,6 +15,11 @@ app.use((req, res, next) => {
 
 app.use(jsonServer.defaults({
   logger: process.env.NODE_ENV !== 'production'
+}))
+
+app.get('/openapi.json', (req, res) => res.json(openApiSpec))
+app.use('/swagger', swaggerUi.serve, swaggerUi.setup(openApiSpec, {
+  customSiteTitle: 'JSONPlaceholder API Docs',
 }))
 
 app.use(router)
