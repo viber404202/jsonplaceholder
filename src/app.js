@@ -47,11 +47,9 @@ app.get('/search', (req, res) => {
     const collection = state[name]
     if (!Array.isArray(collection)) return
 
-    let hits = collection.filter(matches)
-    if (limit) hits = hits.slice(0, limit)
-
-    results[name] = hits
-    total += hits.length
+    const matched = collection.filter(matches)
+    total += matched.length
+    results[name] = limit ? matched.slice(0, limit) : matched
   })
 
   res.jsonp({ query: q, total, results })

@@ -41,6 +41,27 @@ test('GET /search?resource=&limit=', (t) => {
     })
 })
 
+test('GET /search?resource=&limit= (total not truncated)', (t) => {
+  request(app)
+    .get('/search?q=qui&resource=posts')
+    .expect(200, (err, unlimited) => {
+      t.error(err)
+      const fullCount = unlimited.body.total
+
+      request(app)
+        .get('/search?q=qui&resource=posts&limit=3')
+        .expect(200, (err, limited) => {
+          t.error(err)
+          t.equal(
+            limited.body.total,
+            fullCount,
+            'total reflects all matches, not the limited slice'
+          )
+          t.end()
+        })
+    })
+})
+
 test('POST /', (t) => {
   const max = 10
   t.plan(max * 3)
