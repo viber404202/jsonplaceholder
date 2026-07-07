@@ -1,31 +1,27 @@
-name: Claude Code Review (CodeRabbit-Style)
+name: Claude Code Review
 
 on:
   pull_request:
     types: [opened, synchronize, ready_for_review, reopened]
     # Optional: Only run on specific file changes
     # paths:
-    #   - "src/**"
-    #   - "lib/**"
-    #   - "app/**"
-
-  # Allow manual trigger
-  workflow_dispatch:
-    inputs:
-      pr_number:
-        description: "PR number to review"
-        required: true
-        type: number
+    #   - "src/**/*.ts"
+    #   - "src/**/*.tsx"
+    #   - "src/**/*.js"
+    #   - "src/**/*.jsx"
 
 jobs:
   claude-review:
-    # Skip draft PRs
-    if: github.event.pull_request.draft == false
+    # Optional: Filter by PR author
+    # if: |
+    #   github.event.pull_request.user.login == 'external-contributor' ||
+    #   github.event.pull_request.user.login == 'new-developer' ||
+    #   github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'
 
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pull-requests: write
+      contents: read
+      pull-requests: read
       issues: read
       id-token: write
 
@@ -33,89 +29,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Full history for proper diff analysis
+          fetch-depth: 1
 
       - name: Run Claude Code Review
         id: claude-review
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-
-          # ─── Alternative: use Anthropic API key instead of OAuth ───
-          # anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
           plugins: 'code-review@claude-code-plugins'
+          prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }}'
+          # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
+          # or https://code.claude.com/docs/en/cli-reference for available options
 
-          prompt: |
-            /code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number || github.event.inputs.pr_number }}
-
-            Apply these additional review guidelines on top of the standard code review:
-
-            Read any CLAUDE.md, .cursorrules, or project coding guidelines in the repo root
-            and apply those conventions throughout. Focus on the issue classes that generic linters miss:
-
-               **Security & Auth**
-               - Injection vulnerabilities (SQL, XSS, command injection, SSRF)
-               - Authentication and authorization gaps
-               - Unsafe deserialization, secret/credential exposure
-               - Insecure cryptographic usage or hardcoded secrets
-
-               **Bugs & Correctness**
-               - Race conditions and concurrency bugs
-               - Null/undefined dereferences, unhandled error paths
-               - Off-by-one errors, incorrect boundary conditions
-               - Logic errors and incorrect edge-case handling
-               - Type mismatches or unsafe type coercions
-
-               **Resource Management**
-               - Memory leaks and resource leaks (unclosed handles, connections, streams)
-               - Missing cleanup in error/exception paths
-               - Unbounded growth (caches, queues, listeners without removal)
-
-               **API & Integration**
-               - Breaking API contract changes (request/response shape, status codes)
-               - Missing or incorrect error handling for external calls
-               - Backwards-incompatible database schema changes
-               - Missing input validation at API boundaries
-
-               **Code Quality**
-               - Dead code, unreachable branches, redundant checks
-               - Copy-pasted logic that should be abstracted
-               - Overly complex functions that should be decomposed
-               - Missing or misleading comments on non-obvious logic
-               - Test coverage gaps for new or changed code paths
-
-            Organize your review into exactly these three sections:
-
-               ## 🔴 Critical (Bugs & Security)
-               Issues that should block merge. For each finding:
-               - **File**: exact file path and line number(s)
-               - **Issue**: what is wrong
-               - **Impact**: why it matters (exploit scenario, data loss, crash, etc.)
-               - **Fix**: concrete suggested fix with code snippet
-
-               ## 🟡 Suggestions (Improvements)
-               Non-blocking improvements for code quality, readability, performance,
-               or maintainability. Same format: file, issue, and suggested change.
-
-               ## 🟢 Strengths
-               Genuine positives worth calling out — good patterns, solid test coverage,
-               clean abstractions. Be specific, not generic praise.
-
-            Rules:
-               - Reference exact file paths and line numbers from the diff.
-               - Give concrete fix suggestions with code, not vague advice.
-               - If something looks intentional but risky, ask rather than assume.
-               - Do NOT flag style/formatting issues already handled by linters or formatters.
-               - Do NOT repeat the same finding across multiple files — group them.
-               - If the PR looks clean, say so. Don't invent issues.
-               - Keep the review concise. No filler, no preamble.
-
-            End with a one-line summary verdict:
-               - ✅ **LGTM** — No critical issues found, safe to merge.
-               - ⚠️ **Needs Changes** — Critical issues found, see above.
-               - 🔍 **Needs Discussion** — Architectural or design concerns that need team input.
-
-          # Optional: limit conversation turns for cost control
-          # claude_args: "--max-turns 10"
