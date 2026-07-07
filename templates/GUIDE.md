@@ -162,5 +162,7 @@ Available nested routes:
 * https://jsonplaceholder.typicode.com/users/1/albums
 * https://jsonplaceholder.typicode.com/users/1/todos
 * https://jsonplaceholder.typicode.com/users/1/posts
+* https://jsonplaceholder.typicode.com/users/1/carts
+* https://jsonplaceholder.typicode.com/users/1/orders
 
 </main>
