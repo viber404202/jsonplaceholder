@@ -30,11 +30,30 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Resolve developer token secret name
+        id: resolve
+        env:
+          ACTOR: ${{ github.actor }}
+        run: |
+          name="CLAUDE_TOKEN_$(printf '%s' "$ACTOR" | tr '[:lower:]-' '[:upper:]_')"
+          echo "secret_name=$name" >> "$GITHUB_OUTPUT"
+
+      - name: Ensure developer token exists
+        env:
+          DEV_TOKEN: ${{ secrets[steps.resolve.outputs.secret_name] }}
+        run: |
+          if [ -z "$DEV_TOKEN" ]; then
+            echo "::error::No Claude token found for '${{ github.actor }}'." \
+              "Add a repository secret named '${{ steps.resolve.outputs.secret_name }}'" \
+              "with a long-lived token (https://code.claude.com/docs/en/authentication#generate-a-long-lived-token)."
+            exit 1
+          fi
+
       - name: Run Claude Code
         id: claude
         uses: anthropics/claude-code-action@v1
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_code_oauth_token: ${{ secrets[steps.resolve.outputs.secret_name] }}
 
           # This is an optional setting that allows Claude to read CI results on PRs
           additional_permissions: |
@@ -47,4 +66,3 @@ jobs:
           # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
           # or https://code.claude.com/docs/en/cli-reference for available options
           # claude_args: '--allowed-tools Bash(gh pr *)'
-
