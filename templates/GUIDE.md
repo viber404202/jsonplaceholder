@@ -163,4 +163,35 @@ Available nested routes:
 * https://jsonplaceholder.typicode.com/users/1/todos
 * https://jsonplaceholder.typicode.com/users/1/posts
 
+### Live events feed (Server-Sent Events)
+
+For testing real-time / live-updating UIs, `/events` streams simulated events
+(new comments, posts, completed todos, added photos, users coming online) using
+[Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).
+
+```js
+const source = new EventSource('https://jsonplaceholder.typicode.com/events')
+
+source.onmessage = (e) => console.log(JSON.parse(e.data))
+
+// Output (a new event roughly every 3 seconds)
+{
+  type: 'comment.created',
+  resource: 'comments',
+  data: { postId: 1, id: 1, name: '[...]', email: '[...]', body: '[...]' }
+}
+```
+
+Optional query params:
+
+* `?interval=1000` — milliseconds between events (default `3000`, clamped to `250`–`60000`)
+* `?type=comment.created` — only emit events of a single type
+
+You can also listen for a specific event type by name:
+
+```js
+const source = new EventSource('https://jsonplaceholder.typicode.com/events')
+source.addEventListener('todo.completed', (e) => console.log(JSON.parse(e.data)))
+```
+
 </main>

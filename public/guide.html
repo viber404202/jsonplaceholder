@@ -181,6 +181,30 @@ fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
 <li><a href="https://jsonplaceholder.typicode.com/users/1/todos">https://jsonplaceholder.typicode.com/users/1/todos</a></li>
 <li><a href="https://jsonplaceholder.typicode.com/users/1/posts">https://jsonplaceholder.typicode.com/users/1/posts</a></li>
 </ul>
+<h3 id="liveeventsfeedserversentevents">Live events feed (Server-Sent Events)</h3>
+<p>For testing real-time / live-updating UIs, <code>/events</code> streams simulated events
+(new comments, posts, completed todos, added photos, users coming online) using
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events">Server-Sent Events</a>.</p>
+<pre><code class="js language-js">const source = new EventSource('https://jsonplaceholder.typicode.com/events')
+
+source.onmessage = (e) =&gt; console.log(JSON.parse(e.data))
+
+// Output (a new event roughly every 3 seconds)
+{
+  type: 'comment.created',
+  resource: 'comments',
+  data: { postId: 1, id: 1, name: '[...]', email: '[...]', body: '[...]' }
+}
+</code></pre>
+<p>Optional query params:</p>
+<ul>
+<li><code>?interval=1000</code> — milliseconds between events (default <code>3000</code>, clamped to <code>250</code>–<code>60000</code>)</li>
+<li><code>?type=comment.created</code> — only emit events of a single type</li>
+</ul>
+<p>You can also listen for a specific event type by name:</p>
+<pre><code class="js language-js">const source = new EventSource('https://jsonplaceholder.typicode.com/events')
+source.addEventListener('todo.completed', (e) =&gt; console.log(JSON.parse(e.data)))
+</code></pre>
 <p></main></p>
     </div>
 
