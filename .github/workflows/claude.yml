@@ -1,34 +1,29 @@
-name: Claude Code Review
+name: Claude Code
 
 on:
-  pull_request:
-    types: [opened, synchronize, ready_for_review, reopened]
-    # Optional: Only run on specific file changes
-    # paths:
-    #   - "src/**"
-    #   - "lib/**"
-    #   - "app/**"
-
-  # Allow manual trigger
-  workflow_dispatch:
-    inputs:
-      pr_number:
-        description: "PR number to review"
-        required: true
-        type: number
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  issues:
+    types: [opened, assigned]
+  pull_request_review:
+    types: [submitted]
 
 jobs:
-  claude-review:
-    # Skip draft PRs
-    if: github.event.pull_request.draft == false
-
+  claude:
+    if: |
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude')) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')))
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pull-requests: write
+      contents: write # Allow Claude to post review results / commit when asked
+      pull-requests: write # Allow Claude to post review comments
       issues: read
       id-token: write
-
+      actions: read # Required for Claude to read CI results on PRs
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -38,7 +33,7 @@ jobs:
       - name: Resolve developer token secret name
         id: resolve
         env:
-          ACTOR: ${{ github.event.pull_request.user.login || github.actor }}
+          ACTOR: ${{ github.actor }}
         run: |
           name="CLAUDE_TOKEN_$(printf '%s' "$ACTOR" | tr '[:lower:]-' '[:upper:]_')"
           echo "secret_name=$name" >> "$GITHUB_OUTPUT"
@@ -48,19 +43,21 @@ jobs:
           DEV_TOKEN: ${{ secrets[steps.resolve.outputs.secret_name] }}
         run: |
           if [ -z "$DEV_TOKEN" ]; then
-            echo "::error::No Claude token found for '${{ github.event.pull_request.user.login || github.actor }}'." \
+            echo "::error::No Claude token found for '${{ github.actor }}'." \
               "Add a repository secret named '${{ steps.resolve.outputs.secret_name }}'" \
               "with a long-lived token (https://code.claude.com/docs/en/authentication#generate-a-long-lived-token)."
             exit 1
           fi
 
-      - name: Run Claude Code Review
-        id: claude-review
+      - name: Run Claude Code
+        id: claude
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets[steps.resolve.outputs.secret_name] }}
-          track_progress: true
-          use_sticky_comment: true
           plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
           plugins: 'code-review@claude-code-plugins'
           prompt: '/code-review'
+
+          # This is an optional setting that allows Claude to read CI results on PRs
+          additional_permissions: |
+            actions: read
