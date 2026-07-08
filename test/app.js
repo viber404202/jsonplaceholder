@@ -8,6 +8,19 @@ test('GET /', (t) => {
     .expect(200, (err) => t.end(err))
 })
 
+test('POST /uploads', (t) => {
+  request(app)
+    .post('/uploads')
+    .send({ name: 'photo.png' })
+    .expect(201, (err, res) => {
+      t.error(err)
+      t.equal(res.body.name, 'photo.png', 'echoes the file name')
+      t.ok(res.body.url, 'returns a url')
+      t.ok(res.body.url.endsWith('/photo.png'), 'url includes the file name')
+      t.end()
+    })
+})
+
 test('POST /', (t) => {
   const max = 10
   t.plan(max * 3)
