@@ -62,6 +62,11 @@ jobs:
 
           # Post the structured review as one updating top-level comment,
           # in addition to the inline comments emitted by --comment below.
+          # track_progress forces "tag mode", which creates/maintains the
+          # PR comment. Without it, a custom `prompt` runs in automation mode
+          # and the action never posts Claude's output — use_sticky_comment
+          # alone has no comment to update.
+          track_progress: true
           use_sticky_comment: true
 
           plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
