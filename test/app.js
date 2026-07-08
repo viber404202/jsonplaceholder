@@ -8,6 +8,39 @@ test('GET /', (t) => {
     .expect(200, (err) => t.end(err))
 })
 
+test('GET /posts/1?_status=500 simulates an error', (t) => {
+  request(app)
+    .get('/posts/1?_status=500')
+    .expect(500, (err, res) => {
+      t.error(err)
+      t.equal(res.body.status, 500, 'echoes the status code')
+      t.equal(res.body.message, 'Internal Server Error', 'includes reason phrase')
+      t.end()
+    })
+})
+
+test('GET /posts?_status=404 simulates a not-found', (t) => {
+  request(app)
+    .get('/posts?_status=404')
+    .expect(404, (err) => t.end(err))
+})
+
+test('an invalid _status is rejected', (t) => {
+  request(app)
+    .get('/posts?_status=999')
+    .expect(400, (err) => t.end(err))
+})
+
+test('requests without _status are unaffected', (t) => {
+  request(app)
+    .get('/posts/1')
+    .expect(200, (err, res) => {
+      t.error(err)
+      t.equal(res.body.id, 1, 'returns the real resource')
+      t.end()
+    })
+})
+
 test('POST /uploads', (t) => {
   request(app)
     .post('/uploads')
