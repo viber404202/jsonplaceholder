@@ -163,4 +163,51 @@ Available nested routes:
 * https://jsonplaceholder.typicode.com/users/1/todos
 * https://jsonplaceholder.typicode.com/users/1/posts
 
+### Fake authentication
+
+For demoing login screens and protected routes, JSONPlaceholder exposes a
+**fake** auth flow. It issues a real, decodable JWT signed with a public
+secret — so it is not secure, it just lets you practice the token pattern.
+
+```js
+// Log in — any email + password works (it's fake)
+fetch('https://jsonplaceholder.typicode.com/login', {
+  method: 'POST',
+  body: JSON.stringify({
+    email: 'Sincere@april.biz',
+    password: 'anything'
+  }),
+  headers: { 'Content-type': 'application/json; charset=UTF-8' }
+})
+  .then(response => response.json())
+  .then(json => console.log(json)) // { token, user }
+```
+
+```js
+// Register a new user
+fetch('https://jsonplaceholder.typicode.com/register', {
+  method: 'POST',
+  body: JSON.stringify({
+    name: 'Ada Lovelace',
+    email: 'ada@example.com',
+    password: 'anything'
+  }),
+  headers: { 'Content-type': 'application/json; charset=UTF-8' }
+})
+  .then(response => response.json())
+  .then(json => console.log(json)) // { token, user }
+```
+
+```js
+// Access a protected route with the token
+fetch('https://jsonplaceholder.typicode.com/profile', {
+  headers: { Authorization: 'Bearer ' + token }
+})
+  .then(response => response.json())
+  .then(json => console.log(json)) // { id, name, email }
+```
+
+Requests to `/profile` without a valid `Authorization: Bearer <token>` header
+return `401`.
+
 </main>
