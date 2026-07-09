@@ -50,6 +50,7 @@ test('GET /posts?q= multi-term (AND) matches records containing every term', (t)
   const words = wordsOf(post.title)
   const [a, b] = words
   t.ok(a && b, 'test fixture has at least two searchable words')
+  if (!a || !b) return t.end()
 
   request(app)
     .get(`/posts?q=${encodeURIComponent(a + ' ' + b)}`)
@@ -69,6 +70,10 @@ test('GET /posts?q= multi-term (AND) matches records containing every term', (t)
 test('GET /posts?q= with OR returns a superset of AND', (t) => {
   const post = data.posts[0]
   const [a, b] = wordsOf(post.title)
+  if (!a || !b) {
+    t.ok(false, 'test fixture has at least two searchable words')
+    return t.end()
+  }
   const query = encodeURIComponent(a + ' ' + b)
 
   request(app)
@@ -91,6 +96,10 @@ test('GET /posts?q= with q_fields scopes the search to given fields', (t) => {
     const bodyWords = new Set(wordsOf(p.body))
     return wordsOf(p.title).some((w) => !bodyWords.has(w))
   })
+  if (!target) {
+    t.skip('no fixture post has a title-only word')
+    return t.end()
+  }
   const word = wordsOf(target.title).find(
     (w) => !new Set(wordsOf(target.body)).has(w)
   )

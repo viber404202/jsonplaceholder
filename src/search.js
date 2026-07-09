@@ -14,9 +14,7 @@
 // pagination (`_page`/`_limit`), sorting (`_sort`), and relationships
 // (`_embed`/`_expand`) all continue to work alongside search.
 
-// An id that cannot exist in the data, used to force an empty result set
-// (json-server throws on an empty `id` array because it reduces with no seed).
-const NO_RESULTS_ID = '__jsonplaceholder_no_results__'
+
 
 // A value "matches" a term if the term appears (as a substring) anywhere in
 // the value, recursing into objects and arrays.
@@ -94,7 +92,11 @@ function search (db) {
       matchedIds = matchedIds.filter(id => requested.indexOf(id) !== -1)
     }
 
-    req.query.id = matchedIds.length ? matchedIds : [NO_RESULTS_ID]
+    if (matchedIds.length === 0) {
+      return res.json([])
+    }
+
+    req.query.id = matchedIds
 
     next()
   }
@@ -106,4 +108,3 @@ module.exports = search
 module.exports._valueMatches = valueMatches
 module.exports._recordMatches = recordMatches
 module.exports._collectionName = collectionName
-module.exports._NO_RESULTS_ID = NO_RESULTS_ID
