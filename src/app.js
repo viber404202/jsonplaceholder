@@ -12,9 +12,17 @@ const router = jsonServer.router(clone(data), { _isFake: true })
 const defaultRender = router.render
 router.render = (req, res) => {
   const body = res.locals.data
-  if (Array.isArray(body) && !res.getHeader('X-Total-Count')) {
-    res.setHeader('X-Total-Count', body.length)
-    res.setHeader('Access-Control-Expose-Headers', 'X-Total-Count')
+  if (Array.isArray(body)) {
+    if (!res.getHeader('X-Total-Count')) {
+      res.setHeader('X-Total-Count', body.length)
+    }
+    const toExpose = ['X-Total-Count']
+    if (res.getHeader('Link')) toExpose.push('Link')
+    const existing = res.getHeader('Access-Control-Expose-Headers')
+    const merged = new Set(
+      (existing ? existing.split(',').map((h) => h.trim()) : []).concat(toExpose)
+    )
+    res.setHeader('Access-Control-Expose-Headers', Array.from(merged).join(', '))
   }
   defaultRender(req, res)
 }

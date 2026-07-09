@@ -168,8 +168,9 @@ fetch('https://jsonplaceholder.typicode.com/posts?_page=1&_limit=10')
 
 When you use `_page`, a `Link` header is also returned with `first`, `prev`, `next` and `last` URLs to make navigation easy.
 
-```
+```http
 Link: <.../posts?_page=1&_limit=10>; rel="first",
+      <.../posts?_page=1&_limit=10>; rel="prev",
       <.../posts?_page=3&_limit=10>; rel="next",
       <.../posts?_page=10&_limit=10>; rel="last"
 ```
