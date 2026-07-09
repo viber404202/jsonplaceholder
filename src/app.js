@@ -1,6 +1,7 @@
 const jsonServer = require('json-server')
 const clone = require('clone')
 const data = require('../data.json')
+const search = require('./search')
 
 const app = jsonServer.create()
 const router = jsonServer.router(clone(data), { _isFake: true })
@@ -14,6 +15,9 @@ app.use((req, res, next) => {
 app.use(jsonServer.defaults({
   logger: process.env.NODE_ENV !== 'production'
 }))
+
+// Rich full-text search (?q=, multi-term, field-scoped) — see src/search.js
+app.use(search(router.db))
 
 app.use(router)
 

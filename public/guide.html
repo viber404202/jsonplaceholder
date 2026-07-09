@@ -166,6 +166,28 @@ fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
   .then(response =&gt; response.json())
   .then(json =&gt; console.log(json))
 </code></pre>
+<h3 id="fulltextsearch">Full-text search</h3>
+<p>Use the <code>q</code> parameter to search across a resource. Multiple words are matched
+with AND by default (a record must contain <strong>all</strong> of them), and nested fields
+are searched too.</p>
+<pre><code class="js language-js">// Posts containing both "sunt" and "facere"
+fetch('https://jsonplaceholder.typicode.com/posts?q=sunt facere')
+  .then(response =&gt; response.json())
+  .then(json =&gt; console.log(json))
+</code></pre>
+<p>Search can be tuned with a few extra parameters:</p>
+<ul>
+<li><code>q_op=or</code> — match records containing <strong>any</strong> of the terms instead of all</li>
+<li><code>q_fields=title,body</code> — restrict the search to specific fields</li>
+<li><code>q_case=1</code> — make the search case-sensitive</li>
+</ul>
+<pre><code class="js language-js">// Search only the title, case-insensitively, for "lorem" OR "ipsum"
+fetch('https://jsonplaceholder.typicode.com/posts?q=lorem ipsum&amp;q_op=or&amp;q_fields=title')
+  .then(response =&gt; response.json())
+  .then(json =&gt; console.log(json))
+</code></pre>
+<p>Search combines with filtering, sorting, pagination and relationships, e.g.
+<code>?q=lorem&amp;_sort=id&amp;_page=1&amp;_limit=10</code>.</p>
 <h3 id="nestedresources">Nested resources</h3>
 <p>One level of nested route is available.</p>
 <pre><code class="js language-js">// Equivalent to /comments?postId=1
