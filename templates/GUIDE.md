@@ -144,6 +144,38 @@ fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
   .then(json => console.log(json))
 ```
 
+### Paginate resources
+
+Use `_page` and (optionally) `_limit` to paginate returned data. `_limit` defaults to 10 items per page.
+
+```js
+// Second page, 20 posts per page
+fetch('https://jsonplaceholder.typicode.com/posts?_page=2&_limit=20')
+  .then(response => response.json())
+  .then(json => console.log(json))
+```
+
+The total number of items is always returned in the `X-Total-Count` header, so you can build pagination UIs. This header is sent on every list request, even when you don't paginate.
+
+```js
+fetch('https://jsonplaceholder.typicode.com/posts?_page=1&_limit=10')
+  .then(response => {
+    console.log(response.headers.get('X-Total-Count')) // e.g. "100"
+    return response.json()
+  })
+  .then(json => console.log(json))
+```
+
+When you use `_page`, a `Link` header is also returned with `first`, `prev`, `next` and `last` URLs to make navigation easy.
+
+```
+Link: <.../posts?_page=1&_limit=10>; rel="first",
+      <.../posts?_page=3&_limit=10>; rel="next",
+      <.../posts?_page=10&_limit=10>; rel="last"
+```
+
+Both `X-Total-Count` and `Link` are listed in `Access-Control-Expose-Headers`, so they are readable from cross-origin browser requests.
+
 ### Nested resources
 
 One level of nested route is available.

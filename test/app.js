@@ -8,6 +8,31 @@ test('GET /', (t) => {
     .expect(200, (err) => t.end(err))
 })
 
+test('GET /posts sets X-Total-Count on plain list', (t) => {
+  request(app)
+    .get('/posts')
+    .expect('X-Total-Count', '100')
+    .expect('Access-Control-Expose-Headers', /X-Total-Count/)
+    .expect(200, (err, res) => {
+      t.error(err)
+      t.equal(res.body.length, 100, 'returns all 100 posts')
+      t.end()
+    })
+})
+
+test('GET /posts paginates with _page/_limit and sets Link', (t) => {
+  request(app)
+    .get('/posts?_page=2&_limit=10')
+    .expect('X-Total-Count', '100')
+    .expect('Link', /rel="next"/)
+    .expect(200, (err, res) => {
+      t.error(err)
+      t.equal(res.body.length, 10, 'returns 10 posts per page')
+      t.equal(res.body[0].id, 11, 'second page starts at id 11')
+      t.end()
+    })
+})
+
 test('POST /', (t) => {
   const max = 10
   t.plan(max * 3)
