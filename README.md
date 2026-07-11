@@ -31,6 +31,7 @@ I hope you will find it useful.
 * Filters and nested resources
 * Cross-domain ([CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) and [JSONP](http://en.wikipedia.org/wiki/JSONP))
 * Supports GET, POST, PUT, PATCH, DELETE and OPTIONS verbs
+* Live events feed via Server-Sent Events (`/events`)
 * HTTP or HTTPS
 * Compatible with React, Angular, Vue, Ember, ...
 
