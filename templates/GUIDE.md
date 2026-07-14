@@ -144,6 +144,35 @@ fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
   .then(json => console.log(json))
 ```
 
+### Full-text search
+
+Use the `q` parameter to search across a resource. Multiple words are matched
+with AND by default (a record must contain **all** of them), and nested fields
+are searched too.
+
+```js
+// Posts containing both "sunt" and "facere"
+fetch('https://jsonplaceholder.typicode.com/posts?q=sunt facere')
+  .then(response => response.json())
+  .then(json => console.log(json))
+```
+
+Search can be tuned with a few extra parameters:
+
+* `q_op=or` — match records containing **any** of the terms instead of all
+* `q_fields=title,body` — restrict the search to specific fields
+* `q_case=1` — make the search case-sensitive
+
+```js
+// Search only the title, case-insensitively, for "lorem" OR "ipsum"
+fetch('https://jsonplaceholder.typicode.com/posts?q=lorem ipsum&q_op=or&q_fields=title')
+  .then(response => response.json())
+  .then(json => console.log(json))
+```
+
+Search combines with filtering, sorting, pagination and relationships, e.g.
+`?q=lorem&_sort=id&_page=1&_limit=10`.
+
 ### Nested resources
 
 One level of nested route is available.
