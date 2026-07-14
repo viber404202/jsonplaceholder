@@ -162,5 +162,29 @@ Available nested routes:
 * https://jsonplaceholder.typicode.com/users/1/albums
 * https://jsonplaceholder.typicode.com/users/1/todos
 * https://jsonplaceholder.typicode.com/users/1/posts
+* https://jsonplaceholder.typicode.com/users/1/carts
+* https://jsonplaceholder.typicode.com/users/1/orders
+
+### E-commerce resources
+
+For online store tutorials and prototypes, JSONPlaceholder also serves
+`products`, `carts`, `orders` and `tags`.
+
+```js
+// A product has a price, category, rating and stock
+fetch('https://jsonplaceholder.typicode.com/products/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+// Filter products by category
+fetch('https://jsonplaceholder.typicode.com/products?category=electronics')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+// A user's carts and orders (each holds a list of { productId, quantity })
+fetch('https://jsonplaceholder.typicode.com/users/1/orders')
+  .then(response => response.json())
+  .then(json => console.log(json))
+```
 
 </main>

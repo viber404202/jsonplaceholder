@@ -41040,5 +41040,865 @@
       "title": "ipsam aperiam voluptates qui",
       "completed": false
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Mouse",
+      "price": 25.99,
+      "description": "A quality wireless mouse for everyday use.",
+      "category": "electronics",
+      "image": "https://jsonplaceholder.typicode.com/img/products/1.jpg",
+      "rating": {
+        "rate": 3.7,
+        "count": 52
+      },
+      "stock": 18
+    },
+    {
+      "id": 2,
+      "title": "Mechanical Keyboard",
+      "price": 79.99,
+      "description": "A quality mechanical keyboard for everyday use.",
+      "category": "electronics",
+      "image": "https://jsonplaceholder.typicode.com/img/products/2.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 94
+      },
+      "stock": 31
+    },
+    {
+      "id": 3,
+      "title": "Noise Cancelling Headphones",
+      "price": 199.99,
+      "description": "A quality noise cancelling headphones for everyday use.",
+      "category": "electronics",
+      "image": "https://jsonplaceholder.typicode.com/img/products/3.jpg",
+      "rating": {
+        "rate": 3.1,
+        "count": 136
+      },
+      "stock": 44
+    },
+    {
+      "id": 4,
+      "title": "4K Monitor",
+      "price": 329.99,
+      "description": "A quality 4k monitor for everyday use.",
+      "category": "electronics",
+      "image": "https://jsonplaceholder.typicode.com/img/products/4.jpg",
+      "rating": {
+        "rate": 3.8,
+        "count": 178
+      },
+      "stock": 57
+    },
+    {
+      "id": 5,
+      "title": "USB-C Hub",
+      "price": 39.99,
+      "description": "A quality usb-c hub for everyday use.",
+      "category": "electronics",
+      "image": "https://jsonplaceholder.typicode.com/img/products/5.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 220
+      },
+      "stock": 70
+    },
+    {
+      "id": 6,
+      "title": "Cotton T-Shirt",
+      "price": 14.99,
+      "description": "A quality cotton t-shirt for everyday use.",
+      "category": "clothing",
+      "image": "https://jsonplaceholder.typicode.com/img/products/6.jpg",
+      "rating": {
+        "rate": 3.2,
+        "count": 262
+      },
+      "stock": 83
+    },
+    {
+      "id": 7,
+      "title": "Denim Jeans",
+      "price": 49.99,
+      "description": "A quality denim jeans for everyday use.",
+      "category": "clothing",
+      "image": "https://jsonplaceholder.typicode.com/img/products/7.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 304
+      },
+      "stock": 96
+    },
+    {
+      "id": 8,
+      "title": "Running Shoes",
+      "price": 89.99,
+      "description": "A quality running shoes for everyday use.",
+      "category": "clothing",
+      "image": "https://jsonplaceholder.typicode.com/img/products/8.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 346
+      },
+      "stock": 9
+    },
+    {
+      "id": 9,
+      "title": "Wool Sweater",
+      "price": 59.99,
+      "description": "A quality wool sweater for everyday use.",
+      "category": "clothing",
+      "image": "https://jsonplaceholder.typicode.com/img/products/9.jpg",
+      "rating": {
+        "rate": 3.3,
+        "count": 388
+      },
+      "stock": 22
+    },
+    {
+      "id": 10,
+      "title": "Leather Belt",
+      "price": 24.99,
+      "description": "A quality leather belt for everyday use.",
+      "category": "clothing",
+      "image": "https://jsonplaceholder.typicode.com/img/products/10.jpg",
+      "rating": {
+        "rate": 4,
+        "count": 430
+      },
+      "stock": 35
+    },
+    {
+      "id": 11,
+      "title": "Ceramic Coffee Mug",
+      "price": 12.99,
+      "description": "A quality ceramic coffee mug for everyday use.",
+      "category": "home",
+      "image": "https://jsonplaceholder.typicode.com/img/products/11.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 472
+      },
+      "stock": 48
+    },
+    {
+      "id": 12,
+      "title": "Stainless Steel Cookware Set",
+      "price": 149.99,
+      "description": "A quality stainless steel cookware set for everyday use.",
+      "category": "home",
+      "image": "https://jsonplaceholder.typicode.com/img/products/12.jpg",
+      "rating": {
+        "rate": 3.4,
+        "count": 514
+      },
+      "stock": 61
+    },
+    {
+      "id": 13,
+      "title": "Memory Foam Pillow",
+      "price": 34.99,
+      "description": "A quality memory foam pillow for everyday use.",
+      "category": "home",
+      "image": "https://jsonplaceholder.typicode.com/img/products/13.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 556
+      },
+      "stock": 74
+    },
+    {
+      "id": 14,
+      "title": "LED Desk Lamp",
+      "price": 27.99,
+      "description": "A quality led desk lamp for everyday use.",
+      "category": "home",
+      "image": "https://jsonplaceholder.typicode.com/img/products/14.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 598
+      },
+      "stock": 87
+    },
+    {
+      "id": 15,
+      "title": "Scented Candle",
+      "price": 9.99,
+      "description": "A quality scented candle for everyday use.",
+      "category": "home",
+      "image": "https://jsonplaceholder.typicode.com/img/products/15.jpg",
+      "rating": {
+        "rate": 3.5,
+        "count": 640
+      },
+      "stock": 100
+    },
+    {
+      "id": 16,
+      "title": "The Pragmatic Programmer",
+      "price": 39.99,
+      "description": "A quality the pragmatic programmer for everyday use.",
+      "category": "books",
+      "image": "https://jsonplaceholder.typicode.com/img/products/16.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 682
+      },
+      "stock": 13
+    },
+    {
+      "id": 17,
+      "title": "Clean Code",
+      "price": 33.99,
+      "description": "A quality clean code for everyday use.",
+      "category": "books",
+      "image": "https://jsonplaceholder.typicode.com/img/products/17.jpg",
+      "rating": {
+        "rate": 4.9,
+        "count": 724
+      },
+      "stock": 26
+    },
+    {
+      "id": 18,
+      "title": "Wooden Building Blocks",
+      "price": 22.99,
+      "description": "A quality wooden building blocks for everyday use.",
+      "category": "toys",
+      "image": "https://jsonplaceholder.typicode.com/img/products/18.jpg",
+      "rating": {
+        "rate": 3.6,
+        "count": 766
+      },
+      "stock": 39
+    },
+    {
+      "id": 19,
+      "title": "Remote Control Car",
+      "price": 44.99,
+      "description": "A quality remote control car for everyday use.",
+      "category": "toys",
+      "image": "https://jsonplaceholder.typicode.com/img/products/19.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 808
+      },
+      "stock": 52
+    },
+    {
+      "id": 20,
+      "title": "Jigsaw Puzzle 1000pc",
+      "price": 18.99,
+      "description": "A quality jigsaw puzzle 1000pc for everyday use.",
+      "category": "toys",
+      "image": "https://jsonplaceholder.typicode.com/img/products/20.jpg",
+      "rating": {
+        "rate": 3,
+        "count": 850
+      },
+      "stock": 65
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "date": "2020-02-02T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 4,
+          "quantity": 2
+        },
+        {
+          "productId": 11,
+          "quantity": 3
+        },
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ],
+      "total": 721.94
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "date": "2020-03-03T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 7,
+          "quantity": 3
+        },
+        {
+          "productId": 14,
+          "quantity": 1
+        },
+        {
+          "productId": 1,
+          "quantity": 2
+        },
+        {
+          "productId": 8,
+          "quantity": 3
+        }
+      ],
+      "total": 499.91
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "date": "2020-04-04T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 10,
+          "quantity": 1
+        },
+        {
+          "productId": 17,
+          "quantity": 2
+        }
+      ],
+      "total": 92.97
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "date": "2020-05-05T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 13,
+          "quantity": 2
+        },
+        {
+          "productId": 20,
+          "quantity": 3
+        },
+        {
+          "productId": 7,
+          "quantity": 1
+        }
+      ],
+      "total": 176.94
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "date": "2020-06-06T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 16,
+          "quantity": 3
+        },
+        {
+          "productId": 3,
+          "quantity": 1
+        },
+        {
+          "productId": 10,
+          "quantity": 2
+        },
+        {
+          "productId": 17,
+          "quantity": 3
+        }
+      ],
+      "total": 471.91
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "date": "2020-07-07T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 19,
+          "quantity": 1
+        },
+        {
+          "productId": 6,
+          "quantity": 2
+        }
+      ],
+      "total": 74.97
+    },
+    {
+      "id": 7,
+      "userId": 7,
+      "date": "2020-08-08T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 2
+        },
+        {
+          "productId": 9,
+          "quantity": 3
+        },
+        {
+          "productId": 16,
+          "quantity": 1
+        }
+      ],
+      "total": 379.94
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "date": "2020-09-09T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 5,
+          "quantity": 3
+        },
+        {
+          "productId": 12,
+          "quantity": 1
+        },
+        {
+          "productId": 19,
+          "quantity": 2
+        },
+        {
+          "productId": 6,
+          "quantity": 3
+        }
+      ],
+      "total": 404.91
+    },
+    {
+      "id": 9,
+      "userId": 9,
+      "date": "2020-10-10T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 8,
+          "quantity": 1
+        },
+        {
+          "productId": 15,
+          "quantity": 2
+        }
+      ],
+      "total": 109.97
+    },
+    {
+      "id": 10,
+      "userId": 10,
+      "date": "2020-11-11T10:00:00.000Z",
+      "products": [
+        {
+          "productId": 11,
+          "quantity": 2
+        },
+        {
+          "productId": 18,
+          "quantity": 3
+        },
+        {
+          "productId": 5,
+          "quantity": 1
+        }
+      ],
+      "total": 134.94
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "date": "2020-05-05T10:00:00.000Z",
+      "status": "processing",
+      "products": [
+        {
+          "productId": 19,
+          "quantity": 1
+        },
+        {
+          "productId": 6,
+          "quantity": 2
+        }
+      ],
+      "total": 74.97
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "date": "2020-06-06T10:00:00.000Z",
+      "status": "shipped",
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 2
+        },
+        {
+          "productId": 9,
+          "quantity": 3
+        },
+        {
+          "productId": 16,
+          "quantity": 1
+        }
+      ],
+      "total": 379.94
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "date": "2020-07-07T10:00:00.000Z",
+      "status": "delivered",
+      "products": [
+        {
+          "productId": 5,
+          "quantity": 3
+        }
+      ],
+      "total": 119.97
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "date": "2020-08-08T10:00:00.000Z",
+      "status": "cancelled",
+      "products": [
+        {
+          "productId": 8,
+          "quantity": 1
+        },
+        {
+          "productId": 15,
+          "quantity": 2
+        }
+      ],
+      "total": 109.97
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "date": "2020-09-09T10:00:00.000Z",
+      "status": "pending",
+      "products": [
+        {
+          "productId": 11,
+          "quantity": 2
+        },
+        {
+          "productId": 18,
+          "quantity": 3
+        },
+        {
+          "productId": 5,
+          "quantity": 1
+        }
+      ],
+      "total": 134.94
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "date": "2020-10-10T10:00:00.000Z",
+      "status": "processing",
+      "products": [
+        {
+          "productId": 14,
+          "quantity": 3
+        }
+      ],
+      "total": 83.97
+    },
+    {
+      "id": 7,
+      "userId": 7,
+      "date": "2020-11-11T10:00:00.000Z",
+      "status": "shipped",
+      "products": [
+        {
+          "productId": 17,
+          "quantity": 1
+        },
+        {
+          "productId": 4,
+          "quantity": 2
+        }
+      ],
+      "total": 693.97
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "date": "2020-12-12T10:00:00.000Z",
+      "status": "delivered",
+      "products": [
+        {
+          "productId": 20,
+          "quantity": 2
+        },
+        {
+          "productId": 7,
+          "quantity": 3
+        },
+        {
+          "productId": 14,
+          "quantity": 1
+        }
+      ],
+      "total": 215.94
+    },
+    {
+      "id": 9,
+      "userId": 9,
+      "date": "2020-01-13T10:00:00.000Z",
+      "status": "cancelled",
+      "products": [
+        {
+          "productId": 3,
+          "quantity": 3
+        }
+      ],
+      "total": 599.97
+    },
+    {
+      "id": 10,
+      "userId": 10,
+      "date": "2020-02-14T10:00:00.000Z",
+      "status": "pending",
+      "products": [
+        {
+          "productId": 6,
+          "quantity": 1
+        },
+        {
+          "productId": 13,
+          "quantity": 2
+        }
+      ],
+      "total": 84.97
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "date": "2020-03-15T10:00:00.000Z",
+      "status": "processing",
+      "products": [
+        {
+          "productId": 9,
+          "quantity": 2
+        },
+        {
+          "productId": 16,
+          "quantity": 3
+        },
+        {
+          "productId": 3,
+          "quantity": 1
+        }
+      ],
+      "total": 439.94
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "date": "2020-04-16T10:00:00.000Z",
+      "status": "shipped",
+      "products": [
+        {
+          "productId": 12,
+          "quantity": 3
+        }
+      ],
+      "total": 449.97
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "date": "2020-05-17T10:00:00.000Z",
+      "status": "delivered",
+      "products": [
+        {
+          "productId": 15,
+          "quantity": 1
+        },
+        {
+          "productId": 2,
+          "quantity": 2
+        }
+      ],
+      "total": 169.97
+    },
+    {
+      "id": 14,
+      "userId": 4,
+      "date": "2020-06-18T10:00:00.000Z",
+      "status": "cancelled",
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 2
+        },
+        {
+          "productId": 5,
+          "quantity": 3
+        },
+        {
+          "productId": 12,
+          "quantity": 1
+        }
+      ],
+      "total": 315.94
+    },
+    {
+      "id": 15,
+      "userId": 5,
+      "date": "2020-07-19T10:00:00.000Z",
+      "status": "pending",
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 3
+        }
+      ],
+      "total": 77.97
+    },
+    {
+      "id": 16,
+      "userId": 6,
+      "date": "2020-08-20T10:00:00.000Z",
+      "status": "processing",
+      "products": [
+        {
+          "productId": 4,
+          "quantity": 1
+        },
+        {
+          "productId": 11,
+          "quantity": 2
+        }
+      ],
+      "total": 355.97
+    },
+    {
+      "id": 17,
+      "userId": 7,
+      "date": "2020-09-21T10:00:00.000Z",
+      "status": "shipped",
+      "products": [
+        {
+          "productId": 7,
+          "quantity": 2
+        },
+        {
+          "productId": 14,
+          "quantity": 3
+        },
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ],
+      "total": 209.94
+    },
+    {
+      "id": 18,
+      "userId": 8,
+      "date": "2020-10-22T10:00:00.000Z",
+      "status": "delivered",
+      "products": [
+        {
+          "productId": 10,
+          "quantity": 3
+        }
+      ],
+      "total": 74.97
+    },
+    {
+      "id": 19,
+      "userId": 9,
+      "date": "2020-11-23T10:00:00.000Z",
+      "status": "cancelled",
+      "products": [
+        {
+          "productId": 13,
+          "quantity": 1
+        },
+        {
+          "productId": 20,
+          "quantity": 2
+        }
+      ],
+      "total": 72.97
+    },
+    {
+      "id": 20,
+      "userId": 10,
+      "date": "2020-12-24T10:00:00.000Z",
+      "status": "pending",
+      "products": [
+        {
+          "productId": 16,
+          "quantity": 2
+        },
+        {
+          "productId": 3,
+          "quantity": 3
+        },
+        {
+          "productId": 10,
+          "quantity": 1
+        }
+      ],
+      "total": 704.94
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "sale"
+    },
+    {
+      "id": 2,
+      "name": "new-arrival"
+    },
+    {
+      "id": 3,
+      "name": "popular"
+    },
+    {
+      "id": 4,
+      "name": "clearance"
+    },
+    {
+      "id": 5,
+      "name": "featured"
+    },
+    {
+      "id": 6,
+      "name": "bestseller"
+    },
+    {
+      "id": 7,
+      "name": "eco-friendly"
+    },
+    {
+      "id": 8,
+      "name": "limited-edition"
+    },
+    {
+      "id": 9,
+      "name": "premium"
+    },
+    {
+      "id": 10,
+      "name": "budget"
+    },
+    {
+      "id": 11,
+      "name": "trending"
+    },
+    {
+      "id": 12,
+      "name": "seasonal"
+    }
   ]
 }

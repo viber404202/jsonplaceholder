@@ -180,7 +180,27 @@ fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
 <li><a href="https://jsonplaceholder.typicode.com/users/1/albums">https://jsonplaceholder.typicode.com/users/1/albums</a></li>
 <li><a href="https://jsonplaceholder.typicode.com/users/1/todos">https://jsonplaceholder.typicode.com/users/1/todos</a></li>
 <li><a href="https://jsonplaceholder.typicode.com/users/1/posts">https://jsonplaceholder.typicode.com/users/1/posts</a></li>
+<li><a href="https://jsonplaceholder.typicode.com/users/1/carts">https://jsonplaceholder.typicode.com/users/1/carts</a></li>
+<li><a href="https://jsonplaceholder.typicode.com/users/1/orders">https://jsonplaceholder.typicode.com/users/1/orders</a></li>
 </ul>
+<h3 id="ecommerceresources">E-commerce resources</h3>
+<p>For online store tutorials and prototypes, JSONPlaceholder also serves
+<code>products</code>, <code>carts</code>, <code>orders</code> and <code>tags</code>.</p>
+<pre><code class="js language-js">// A product has a price, category, rating and stock
+fetch('https://jsonplaceholder.typicode.com/products/1')
+  .then(response =&gt; response.json())
+  .then(json =&gt; console.log(json))
+
+// Filter products by category
+fetch('https://jsonplaceholder.typicode.com/products?category=electronics')
+  .then(response =&gt; response.json())
+  .then(json =&gt; console.log(json))
+
+// A user's carts and orders (each holds a list of { productId, quantity })
+fetch('https://jsonplaceholder.typicode.com/users/1/orders')
+  .then(response =&gt; response.json())
+  .then(json =&gt; console.log(json))
+</code></pre>
 <p></main></p>
     </div>
 
