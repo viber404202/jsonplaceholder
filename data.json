@@ -41040,5 +41040,3079 @@
       "title": "ipsam aperiam voluptates qui",
       "completed": false
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "slug": "electronics"
+    },
+    {
+      "id": 2,
+      "name": "Computers",
+      "slug": "computers"
+    },
+    {
+      "id": 3,
+      "name": "Home & Kitchen",
+      "slug": "home-kitchen"
+    },
+    {
+      "id": 4,
+      "name": "Sports & Outdoors",
+      "slug": "sports-outdoors"
+    },
+    {
+      "id": 5,
+      "name": "Clothing",
+      "slug": "clothing"
+    },
+    {
+      "id": 6,
+      "name": "Books",
+      "slug": "books"
+    },
+    {
+      "id": 7,
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    {
+      "id": 8,
+      "name": "Toys & Games",
+      "slug": "toys-games"
+    },
+    {
+      "id": 9,
+      "name": "Automotive",
+      "slug": "automotive"
+    },
+    {
+      "id": 10,
+      "name": "Garden",
+      "slug": "garden"
+    }
+  ],
+  "products": [
+    {
+      "categoryId": 1,
+      "id": 1,
+      "title": "Wireless Noise-Cancelling Headphones",
+      "description": "Designed for daily use and easy to store. Backed by a two-year limited warranty.",
+      "price": 220.95,
+      "stock": 46,
+      "rating": 3.1,
+      "imageUrl": "https://picsum.photos/seed/product-1/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-1/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 2,
+      "title": "4K Streaming Media Player",
+      "description": "A customer favorite, restocked weekly. Free returns within thirty days.",
+      "price": 53.95,
+      "stock": 153,
+      "rating": 3.2,
+      "imageUrl": "https://picsum.photos/seed/product-2/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-2/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 3,
+      "title": "Bluetooth Portable Speaker",
+      "description": "A dependable pick for first-time buyers. Free returns within thirty days.",
+      "price": 78.99,
+      "stock": 237,
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/product-3/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-3/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 4,
+      "title": "Smart Video Doorbell",
+      "description": "A dependable pick for first-time buyers. Ships in fully recyclable packaging.",
+      "price": 160.95,
+      "stock": 89,
+      "rating": 3.6,
+      "imageUrl": "https://picsum.photos/seed/product-4/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-4/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 5,
+      "title": "Digital Photo Frame",
+      "description": "Designed for daily use and easy to store. Independently tested to meet safety standards.",
+      "price": 121.99,
+      "stock": 19,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-5/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-5/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 6,
+      "title": "Noise-Isolating Earbuds",
+      "description": "A dependable pick for first-time buyers. Includes a one-year replacement guarantee.",
+      "price": 80.95,
+      "stock": 39,
+      "rating": 3.2,
+      "imageUrl": "https://picsum.photos/seed/product-6/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-6/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 7,
+      "title": "Universal Remote Control",
+      "description": "A customer favorite, restocked weekly. Includes a one-year replacement guarantee.",
+      "price": 22.99,
+      "stock": 105,
+      "rating": 3.1,
+      "imageUrl": "https://picsum.photos/seed/product-7/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-7/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 8,
+      "title": "Portable Power Bank 20000mAh",
+      "description": "Designed for daily use and easy to store. Available while stocks last.",
+      "price": 41.99,
+      "stock": 122,
+      "rating": 3.1,
+      "imageUrl": "https://picsum.photos/seed/product-8/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-8/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 9,
+      "title": "Smart Thermostat",
+      "description": "A dependable pick for first-time buyers. Available while stocks last.",
+      "price": 210.95,
+      "stock": 136,
+      "rating": 4.1,
+      "imageUrl": "https://picsum.photos/seed/product-9/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-9/200/200"
+    },
+    {
+      "categoryId": 1,
+      "id": 10,
+      "title": "HD Webcam with Ring Light",
+      "description": "A customer favorite, restocked weekly. Free returns within thirty days.",
+      "price": 76.95,
+      "stock": 82,
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/product-10/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-10/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 11,
+      "title": "14-inch Ultrabook Laptop",
+      "description": "A customer favorite, restocked weekly. Includes a one-year replacement guarantee.",
+      "price": 1099.99,
+      "stock": 183,
+      "rating": 3.4,
+      "imageUrl": "https://picsum.photos/seed/product-11/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-11/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 12,
+      "title": "Mechanical Gaming Keyboard",
+      "description": "Designed for daily use and easy to store. Free returns within thirty days.",
+      "price": 134.95,
+      "stock": 218,
+      "rating": 3.1,
+      "imageUrl": "https://picsum.photos/seed/product-12/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-12/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 13,
+      "title": "Ergonomic Wireless Mouse",
+      "description": "An everyday essential built to last. Independently tested to meet safety standards.",
+      "price": 46.95,
+      "stock": 47,
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/product-13/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-13/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 14,
+      "title": "27-inch QHD Monitor",
+      "description": "Designed for daily use and easy to store. Independently tested to meet safety standards.",
+      "price": 347.99,
+      "stock": 157,
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/product-14/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-14/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 15,
+      "title": "1TB NVMe Solid State Drive",
+      "description": "Compact, lightweight and built for travel. Ships in fully recyclable packaging.",
+      "price": 102.95,
+      "stock": 54,
+      "rating": 3.6,
+      "imageUrl": "https://picsum.photos/seed/product-15/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-15/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 16,
+      "title": "USB-C Docking Station",
+      "description": "Thoughtfully made from premium materials. Backed by a two-year limited warranty.",
+      "price": 166.99,
+      "stock": 32,
+      "rating": 4.1,
+      "imageUrl": "https://picsum.photos/seed/product-16/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-16/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 17,
+      "title": "Laptop Cooling Stand",
+      "description": "An everyday essential built to last. Free returns within thirty days.",
+      "price": 34.95,
+      "stock": 116,
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/product-17/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-17/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 18,
+      "title": "32GB DDR5 Memory Kit",
+      "description": "An everyday essential built to last. Available while stocks last.",
+      "price": 138.99,
+      "stock": 220,
+      "rating": 4.3,
+      "imageUrl": "https://picsum.photos/seed/product-18/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-18/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 19,
+      "title": "Wi-Fi 6 Mesh Router",
+      "description": "A customer favorite, restocked weekly. Independently tested to meet safety standards.",
+      "price": 257.95,
+      "stock": 0,
+      "rating": 3.6,
+      "imageUrl": "https://picsum.photos/seed/product-19/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-19/200/200"
+    },
+    {
+      "categoryId": 2,
+      "id": 20,
+      "title": "External Blu-ray Drive",
+      "description": "A customer favorite, restocked weekly. Ships in fully recyclable packaging.",
+      "price": 86.99,
+      "stock": 140,
+      "rating": 3.1,
+      "imageUrl": "https://picsum.photos/seed/product-20/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-20/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 21,
+      "title": "Stainless Steel Air Fryer",
+      "description": "A customer favorite, restocked weekly. Ships in fully recyclable packaging.",
+      "price": 135.99,
+      "stock": 138,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-21/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-21/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 22,
+      "title": "12-Cup Drip Coffee Maker",
+      "description": "An everyday essential built to last. Available while stocks last.",
+      "price": 80.99,
+      "stock": 169,
+      "rating": 4,
+      "imageUrl": "https://picsum.photos/seed/product-22/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-22/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 23,
+      "title": "Cast Iron Skillet",
+      "description": "Thoughtfully made from premium materials. Available while stocks last.",
+      "price": 36.95,
+      "stock": 141,
+      "rating": 3.6,
+      "imageUrl": "https://picsum.photos/seed/product-23/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-23/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 24,
+      "title": "Cordless Stick Vacuum",
+      "description": "Designed for daily use and easy to store. Available while stocks last.",
+      "price": 258.95,
+      "stock": 206,
+      "rating": 3.3,
+      "imageUrl": "https://picsum.photos/seed/product-24/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-24/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 25,
+      "title": "Non-Stick Cookware Set",
+      "description": "An everyday essential built to last. Independently tested to meet safety standards.",
+      "price": 163.99,
+      "stock": 222,
+      "rating": 4.6,
+      "imageUrl": "https://picsum.photos/seed/product-25/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-25/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 26,
+      "title": "Electric Kettle with Temperature Control",
+      "description": "Thoughtfully made from premium materials. Backed by a two-year limited warranty.",
+      "price": 75.95,
+      "stock": 122,
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/product-26/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-26/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 27,
+      "title": "Bamboo Cutting Board Set",
+      "description": "Thoughtfully made from premium materials. Includes a one-year replacement guarantee.",
+      "price": 30.95,
+      "stock": 111,
+      "rating": 3.6,
+      "imageUrl": "https://picsum.photos/seed/product-27/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-27/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 28,
+      "title": "Robot Vacuum with Room Mapping",
+      "description": "A dependable pick for first-time buyers. Independently tested to meet safety standards.",
+      "price": 431.95,
+      "stock": 242,
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/product-28/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-28/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 29,
+      "title": "Memory Foam Mattress Topper",
+      "description": "An everyday essential built to last. Independently tested to meet safety standards.",
+      "price": 149.95,
+      "stock": 145,
+      "rating": 4,
+      "imageUrl": "https://picsum.photos/seed/product-29/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-29/200/200"
+    },
+    {
+      "categoryId": 3,
+      "id": 30,
+      "title": "Ceramic Dinnerware Set",
+      "description": "A customer favorite, restocked weekly. Independently tested to meet safety standards.",
+      "price": 122.95,
+      "stock": 230,
+      "rating": 3.7,
+      "imageUrl": "https://picsum.photos/seed/product-30/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-30/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 31,
+      "title": "Adjustable Dumbbell Set",
+      "description": "Thoughtfully made from premium materials. Independently tested to meet safety standards.",
+      "price": 376.99,
+      "stock": 4,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-31/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-31/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 32,
+      "title": "2-Person Backpacking Tent",
+      "description": "An everyday essential built to last. Available while stocks last.",
+      "price": 205.99,
+      "stock": 167,
+      "rating": 3.4,
+      "imageUrl": "https://picsum.photos/seed/product-32/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-32/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 33,
+      "title": "Insulated Water Bottle 32oz",
+      "description": "A dependable pick for first-time buyers. Backed by a two-year limited warranty.",
+      "price": 37.99,
+      "stock": 81,
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/product-33/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-33/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 34,
+      "title": "Yoga Mat with Alignment Lines",
+      "description": "A dependable pick for first-time buyers. Includes a one-year replacement guarantee.",
+      "price": 54.95,
+      "stock": 27,
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/product-34/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-34/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 35,
+      "title": "Carbon Fiber Trekking Poles",
+      "description": "Compact, lightweight and built for travel. Backed by a two-year limited warranty.",
+      "price": 97.99,
+      "stock": 156,
+      "rating": 3.6,
+      "imageUrl": "https://picsum.photos/seed/product-35/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-35/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 36,
+      "title": "Indoor Cycling Bike",
+      "description": "An everyday essential built to last. Available while stocks last.",
+      "price": 648.99,
+      "stock": 111,
+      "rating": 3.1,
+      "imageUrl": "https://picsum.photos/seed/product-36/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-36/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 37,
+      "title": "Waterproof Hiking Backpack",
+      "description": "Designed for daily use and easy to store. Available while stocks last.",
+      "price": 152.95,
+      "stock": 10,
+      "rating": 3,
+      "imageUrl": "https://picsum.photos/seed/product-37/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-37/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 38,
+      "title": "Resistance Band Set",
+      "description": "A customer favorite, restocked weekly. Ships in fully recyclable packaging.",
+      "price": 26.95,
+      "stock": 0,
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/product-38/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-38/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 39,
+      "title": "Inflatable Paddle Board",
+      "description": "Compact, lightweight and built for travel. Free returns within thirty days.",
+      "price": 386.99,
+      "stock": 71,
+      "rating": 3.7,
+      "imageUrl": "https://picsum.photos/seed/product-39/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-39/200/200"
+    },
+    {
+      "categoryId": 4,
+      "id": 40,
+      "title": "Three-Season Sleeping Bag",
+      "description": "A customer favorite, restocked weekly. Independently tested to meet safety standards.",
+      "price": 99.99,
+      "stock": 44,
+      "rating": 3.7,
+      "imageUrl": "https://picsum.photos/seed/product-40/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-40/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 41,
+      "title": "Merino Wool Crew Socks",
+      "description": "An everyday essential built to last. Free returns within thirty days.",
+      "price": 19.99,
+      "stock": 44,
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/product-41/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-41/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 42,
+      "title": "Lightweight Rain Jacket",
+      "description": "An everyday essential built to last. Independently tested to meet safety standards.",
+      "price": 88.95,
+      "stock": 100,
+      "rating": 3,
+      "imageUrl": "https://picsum.photos/seed/product-42/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-42/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 43,
+      "title": "Slim Fit Chino Trousers",
+      "description": "A customer favorite, restocked weekly. Available while stocks last.",
+      "price": 61.99,
+      "stock": 226,
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/product-43/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-43/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 44,
+      "title": "Organic Cotton T-Shirt",
+      "description": "Compact, lightweight and built for travel. Free returns within thirty days.",
+      "price": 21.99,
+      "stock": 35,
+      "rating": 3.7,
+      "imageUrl": "https://picsum.photos/seed/product-44/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-44/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 45,
+      "title": "Fleece-Lined Hoodie",
+      "description": "Compact, lightweight and built for travel. Backed by a two-year limited warranty.",
+      "price": 56.99,
+      "stock": 101,
+      "rating": 3.9,
+      "imageUrl": "https://picsum.photos/seed/product-45/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-45/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 46,
+      "title": "Leather Chelsea Boots",
+      "description": "Thoughtfully made from premium materials. Backed by a two-year limited warranty.",
+      "price": 145.99,
+      "stock": 160,
+      "rating": 3.5,
+      "imageUrl": "https://picsum.photos/seed/product-46/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-46/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 47,
+      "title": "Packable Down Vest",
+      "description": "A dependable pick for first-time buyers. Free returns within thirty days.",
+      "price": 109.99,
+      "stock": 206,
+      "rating": 4.9,
+      "imageUrl": "https://picsum.photos/seed/product-47/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-47/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 48,
+      "title": "Stretch Denim Jeans",
+      "description": "A customer favorite, restocked weekly. Includes a one-year replacement guarantee.",
+      "price": 70.99,
+      "stock": 192,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-48/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-48/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 49,
+      "title": "Linen Button-Down Shirt",
+      "description": "Compact, lightweight and built for travel. Backed by a two-year limited warranty.",
+      "price": 65.99,
+      "stock": 129,
+      "rating": 3.5,
+      "imageUrl": "https://picsum.photos/seed/product-49/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-49/200/200"
+    },
+    {
+      "categoryId": 5,
+      "id": 50,
+      "title": "Ribbed Knit Beanie",
+      "description": "A customer favorite, restocked weekly. Ships in fully recyclable packaging.",
+      "price": 21.99,
+      "stock": 95,
+      "rating": 3.6,
+      "imageUrl": "https://picsum.photos/seed/product-50/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-50/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 51,
+      "title": "Illustrated Atlas of the World",
+      "description": "Designed for daily use and easy to store. Backed by a two-year limited warranty.",
+      "price": 39.99,
+      "stock": 10,
+      "rating": 4,
+      "imageUrl": "https://picsum.photos/seed/product-51/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-51/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 52,
+      "title": "Beginner's Guide to Woodworking",
+      "description": "Compact, lightweight and built for travel. Available while stocks last.",
+      "price": 21.99,
+      "stock": 53,
+      "rating": 4.6,
+      "imageUrl": "https://picsum.photos/seed/product-52/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-52/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 53,
+      "title": "Modern Bread Baking",
+      "description": "A dependable pick for first-time buyers. Backed by a two-year limited warranty.",
+      "price": 27.95,
+      "stock": 117,
+      "rating": 3.7,
+      "imageUrl": "https://picsum.photos/seed/product-53/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-53/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 54,
+      "title": "Field Guide to Garden Birds",
+      "description": "Designed for daily use and easy to store. Available while stocks last.",
+      "price": 16.99,
+      "stock": 216,
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/product-54/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-54/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 55,
+      "title": "One-Pot Weeknight Cooking",
+      "description": "Designed for daily use and easy to store. Independently tested to meet safety standards.",
+      "price": 26.95,
+      "stock": 78,
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/product-55/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-55/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 56,
+      "title": "Watercolor for Absolute Beginners",
+      "description": "Compact, lightweight and built for travel. Includes a one-year replacement guarantee.",
+      "price": 17.99,
+      "stock": 118,
+      "rating": 4.9,
+      "imageUrl": "https://picsum.photos/seed/product-56/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-56/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 57,
+      "title": "A Pocket History of Astronomy",
+      "description": "A customer favorite, restocked weekly. Backed by a two-year limited warranty.",
+      "price": 16.95,
+      "stock": 0,
+      "rating": 3.4,
+      "imageUrl": "https://picsum.photos/seed/product-57/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-57/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 58,
+      "title": "The Complete Home Repair Manual",
+      "description": "A dependable pick for first-time buyers. Free returns within thirty days.",
+      "price": 43.95,
+      "stock": 181,
+      "rating": 3.3,
+      "imageUrl": "https://picsum.photos/seed/product-58/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-58/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 59,
+      "title": "Mindful Mornings Journal",
+      "description": "Compact, lightweight and built for travel. Independently tested to meet safety standards.",
+      "price": 12.99,
+      "stock": 11,
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/product-59/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-59/200/200"
+    },
+    {
+      "categoryId": 6,
+      "id": 60,
+      "title": "Big Book of Logic Puzzles",
+      "description": "Compact, lightweight and built for travel. Ships in fully recyclable packaging.",
+      "price": 8.95,
+      "stock": 58,
+      "rating": 3.2,
+      "imageUrl": "https://picsum.photos/seed/product-60/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-60/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 61,
+      "title": "Vitamin C Facial Serum",
+      "description": "Compact, lightweight and built for travel. Includes a one-year replacement guarantee.",
+      "price": 31.95,
+      "stock": 26,
+      "rating": 4.7,
+      "imageUrl": "https://picsum.photos/seed/product-61/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-61/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 62,
+      "title": "Hydrating Sheet Mask Set",
+      "description": "An everyday essential built to last. Free returns within thirty days.",
+      "price": 18.95,
+      "stock": 202,
+      "rating": 3.4,
+      "imageUrl": "https://picsum.photos/seed/product-62/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-62/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 63,
+      "title": "Bamboo Charcoal Cleanser",
+      "description": "A dependable pick for first-time buyers. Independently tested to meet safety standards.",
+      "price": 14.95,
+      "stock": 112,
+      "rating": 4,
+      "imageUrl": "https://picsum.photos/seed/product-63/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-63/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 64,
+      "title": "Argan Oil Hair Treatment",
+      "description": "A dependable pick for first-time buyers. Free returns within thirty days.",
+      "price": 21.99,
+      "stock": 134,
+      "rating": 3,
+      "imageUrl": "https://picsum.photos/seed/product-64/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-64/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 65,
+      "title": "SPF 50 Mineral Sunscreen",
+      "description": "A customer favorite, restocked weekly. Backed by a two-year limited warranty.",
+      "price": 16.95,
+      "stock": 22,
+      "rating": 3.9,
+      "imageUrl": "https://picsum.photos/seed/product-65/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-65/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 66,
+      "title": "Matte Liquid Lipstick",
+      "description": "An everyday essential built to last. Free returns within thirty days.",
+      "price": 12.95,
+      "stock": 105,
+      "rating": 3.5,
+      "imageUrl": "https://picsum.photos/seed/product-66/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-66/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 67,
+      "title": "Detangling Hair Brush",
+      "description": "Thoughtfully made from premium materials. Includes a one-year replacement guarantee.",
+      "price": 14.99,
+      "stock": 96,
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/product-67/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-67/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 68,
+      "title": "Eucalyptus Bath Salts",
+      "description": "A dependable pick for first-time buyers. Ships in fully recyclable packaging.",
+      "price": 11.95,
+      "stock": 124,
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/product-68/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-68/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 69,
+      "title": "Retinol Night Cream",
+      "description": "A dependable pick for first-time buyers. Available while stocks last.",
+      "price": 36.95,
+      "stock": 13,
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/product-69/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-69/200/200"
+    },
+    {
+      "categoryId": 7,
+      "id": 70,
+      "title": "Nail Care Kit",
+      "description": "Designed for daily use and easy to store. Free returns within thirty days.",
+      "price": 22.99,
+      "stock": 109,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-70/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-70/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 71,
+      "title": "Wooden Building Blocks",
+      "description": "Designed for daily use and easy to store. Free returns within thirty days.",
+      "price": 35.99,
+      "stock": 135,
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/product-71/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-71/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 72,
+      "title": "1000-Piece Jigsaw Puzzle",
+      "description": "Thoughtfully made from premium materials. Ships in fully recyclable packaging.",
+      "price": 20.99,
+      "stock": 165,
+      "rating": 4.7,
+      "imageUrl": "https://picsum.photos/seed/product-72/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-72/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 73,
+      "title": "Remote Control Off-Road Truck",
+      "description": "An everyday essential built to last. Includes a one-year replacement guarantee.",
+      "price": 66.95,
+      "stock": 7,
+      "rating": 4.7,
+      "imageUrl": "https://picsum.photos/seed/product-73/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-73/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 74,
+      "title": "Family Strategy Board Game",
+      "description": "Compact, lightweight and built for travel. Free returns within thirty days.",
+      "price": 42.95,
+      "stock": 51,
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/product-74/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-74/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 75,
+      "title": "Magnetic Tile Construction Set",
+      "description": "Compact, lightweight and built for travel. Includes a one-year replacement guarantee.",
+      "price": 58.99,
+      "stock": 245,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-75/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-75/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 76,
+      "title": "Plush Teddy Bear",
+      "description": "Designed for daily use and easy to store. Includes a one-year replacement guarantee.",
+      "price": 22.95,
+      "stock": 0,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-76/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-76/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 77,
+      "title": "Kids Art Supply Case",
+      "description": "A customer favorite, restocked weekly. Available while stocks last.",
+      "price": 29.99,
+      "stock": 196,
+      "rating": 3,
+      "imageUrl": "https://picsum.photos/seed/product-77/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-77/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 78,
+      "title": "Marble Run Starter Kit",
+      "description": "Thoughtfully made from premium materials. Includes a one-year replacement guarantee.",
+      "price": 55.95,
+      "stock": 107,
+      "rating": 4.6,
+      "imageUrl": "https://picsum.photos/seed/product-78/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-78/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 79,
+      "title": "Travel Card Game Collection",
+      "description": "Compact, lightweight and built for travel. Available while stocks last.",
+      "price": 15.99,
+      "stock": 107,
+      "rating": 3,
+      "imageUrl": "https://picsum.photos/seed/product-79/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-79/200/200"
+    },
+    {
+      "categoryId": 8,
+      "id": 80,
+      "title": "Dinosaur Figurine Playset",
+      "description": "A dependable pick for first-time buyers. Available while stocks last.",
+      "price": 25.99,
+      "stock": 235,
+      "rating": 3.4,
+      "imageUrl": "https://picsum.photos/seed/product-80/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-80/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 81,
+      "title": "All-Weather Floor Mats",
+      "description": "Compact, lightweight and built for travel. Includes a one-year replacement guarantee.",
+      "price": 97.99,
+      "stock": 23,
+      "rating": 3.9,
+      "imageUrl": "https://picsum.photos/seed/product-81/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-81/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 82,
+      "title": "Portable Jump Starter",
+      "description": "Compact, lightweight and built for travel. Ships in fully recyclable packaging.",
+      "price": 98.99,
+      "stock": 8,
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/product-82/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-82/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 83,
+      "title": "Microfiber Wash Mitt Set",
+      "description": "A customer favorite, restocked weekly. Free returns within thirty days.",
+      "price": 18.95,
+      "stock": 180,
+      "rating": 4.9,
+      "imageUrl": "https://picsum.photos/seed/product-83/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-83/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 84,
+      "title": "Dash Camera with Night Vision",
+      "description": "Compact, lightweight and built for travel. Backed by a two-year limited warranty.",
+      "price": 131.99,
+      "stock": 216,
+      "rating": 4.3,
+      "imageUrl": "https://picsum.photos/seed/product-84/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-84/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 85,
+      "title": "Tire Pressure Gauge",
+      "description": "An everyday essential built to last. Includes a one-year replacement guarantee.",
+      "price": 15.95,
+      "stock": 85,
+      "rating": 3.6,
+      "imageUrl": "https://picsum.photos/seed/product-85/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-85/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 86,
+      "title": "Magnetic Car Phone Mount",
+      "description": "A customer favorite, restocked weekly. Available while stocks last.",
+      "price": 24.95,
+      "stock": 184,
+      "rating": 4.6,
+      "imageUrl": "https://picsum.photos/seed/product-86/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-86/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 87,
+      "title": "Ceramic Coating Spray",
+      "description": "An everyday essential built to last. Free returns within thirty days.",
+      "price": 37.95,
+      "stock": 103,
+      "rating": 4.7,
+      "imageUrl": "https://picsum.photos/seed/product-87/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-87/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 88,
+      "title": "Roof Cargo Carrier",
+      "description": "Compact, lightweight and built for travel. Includes a one-year replacement guarantee.",
+      "price": 257.95,
+      "stock": 203,
+      "rating": 4.9,
+      "imageUrl": "https://picsum.photos/seed/product-88/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-88/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 89,
+      "title": "Folding Windshield Sun Shade",
+      "description": "Compact, lightweight and built for travel. Available while stocks last.",
+      "price": 27.95,
+      "stock": 28,
+      "rating": 4,
+      "imageUrl": "https://picsum.photos/seed/product-89/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-89/200/200"
+    },
+    {
+      "categoryId": 9,
+      "id": 90,
+      "title": "OBD2 Diagnostic Scanner",
+      "description": "Designed for daily use and easy to store. Ships in fully recyclable packaging.",
+      "price": 58.95,
+      "stock": 246,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-90/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-90/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 91,
+      "title": "Stainless Steel Hand Trowel",
+      "description": "A dependable pick for first-time buyers. Independently tested to meet safety standards.",
+      "price": 15.99,
+      "stock": 178,
+      "rating": 3.4,
+      "imageUrl": "https://picsum.photos/seed/product-91/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-91/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 92,
+      "title": "Expandable Garden Hose 50ft",
+      "description": "Compact, lightweight and built for travel. Includes a one-year replacement guarantee.",
+      "price": 39.99,
+      "stock": 97,
+      "rating": 3.9,
+      "imageUrl": "https://picsum.photos/seed/product-92/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-92/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 93,
+      "title": "Raised Cedar Planter Box",
+      "description": "A dependable pick for first-time buyers. Includes a one-year replacement guarantee.",
+      "price": 129.95,
+      "stock": 55,
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/product-93/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-93/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 94,
+      "title": "Solar Pathway Lights",
+      "description": "Compact, lightweight and built for travel. Backed by a two-year limited warranty.",
+      "price": 46.95,
+      "stock": 127,
+      "rating": 3.8,
+      "imageUrl": "https://picsum.photos/seed/product-94/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-94/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 95,
+      "title": "Cordless Hedge Trimmer",
+      "description": "A dependable pick for first-time buyers. Available while stocks last.",
+      "price": 143.99,
+      "stock": 0,
+      "rating": 4.9,
+      "imageUrl": "https://picsum.photos/seed/product-95/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-95/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 96,
+      "title": "Compost Tumbler Bin",
+      "description": "Compact, lightweight and built for travel. Free returns within thirty days.",
+      "price": 103.99,
+      "stock": 9,
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/product-96/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-96/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 97,
+      "title": "Heavy-Duty Garden Kneeler",
+      "description": "An everyday essential built to last. Ships in fully recyclable packaging.",
+      "price": 49.99,
+      "stock": 88,
+      "rating": 3.2,
+      "imageUrl": "https://picsum.photos/seed/product-97/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-97/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 98,
+      "title": "Bird Feeder with Squirrel Guard",
+      "description": "An everyday essential built to last. Available while stocks last.",
+      "price": 34.99,
+      "stock": 106,
+      "rating": 4.1,
+      "imageUrl": "https://picsum.photos/seed/product-98/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-98/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 99,
+      "title": "Drip Irrigation Starter Kit",
+      "description": "A dependable pick for first-time buyers. Includes a one-year replacement guarantee.",
+      "price": 56.99,
+      "stock": 198,
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/product-99/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-99/200/200"
+    },
+    {
+      "categoryId": 10,
+      "id": 100,
+      "title": "Terracotta Plant Pot Set",
+      "description": "A dependable pick for first-time buyers. Available while stocks last.",
+      "price": 32.95,
+      "stock": 103,
+      "rating": 3.2,
+      "imageUrl": "https://picsum.photos/seed/product-100/600/600",
+      "thumbnailUrl": "https://picsum.photos/seed/product-100/200/200"
+    }
+  ],
+  "carts": [
+    {
+      "userId": 1,
+      "id": 1,
+      "items": [
+        {
+          "productId": 41,
+          "quantity": 1,
+          "price": 19.99,
+          "total": 19.99
+        },
+        {
+          "productId": 44,
+          "quantity": 3,
+          "price": 21.99,
+          "total": 65.97
+        },
+        {
+          "productId": 96,
+          "quantity": 4,
+          "price": 103.99,
+          "total": 415.96
+        }
+      ],
+      "totalItems": 8,
+      "total": 501.92,
+      "updatedAt": "2026-07-13T00:10:38.000Z"
+    },
+    {
+      "userId": 2,
+      "id": 2,
+      "items": [
+        {
+          "productId": 4,
+          "quantity": 3,
+          "price": 160.95,
+          "total": 482.85
+        },
+        {
+          "productId": 7,
+          "quantity": 3,
+          "price": 22.99,
+          "total": 68.97
+        },
+        {
+          "productId": 16,
+          "quantity": 2,
+          "price": 166.99,
+          "total": 333.98
+        },
+        {
+          "productId": 32,
+          "quantity": 1,
+          "price": 205.99,
+          "total": 205.99
+        },
+        {
+          "productId": 53,
+          "quantity": 4,
+          "price": 27.95,
+          "total": 111.8
+        }
+      ],
+      "totalItems": 13,
+      "total": 1203.59,
+      "updatedAt": "2026-07-12T10:54:49.000Z"
+    },
+    {
+      "userId": 3,
+      "id": 3,
+      "items": [
+        {
+          "productId": 68,
+          "quantity": 2,
+          "price": 11.95,
+          "total": 23.9
+        }
+      ],
+      "totalItems": 2,
+      "total": 23.9,
+      "updatedAt": "2026-07-27T17:43:00.000Z"
+    },
+    {
+      "userId": 4,
+      "id": 4,
+      "items": [
+        {
+          "productId": 18,
+          "quantity": 4,
+          "price": 138.99,
+          "total": 555.96
+        },
+        {
+          "productId": 35,
+          "quantity": 4,
+          "price": 97.99,
+          "total": 391.96
+        },
+        {
+          "productId": 63,
+          "quantity": 3,
+          "price": 14.95,
+          "total": 44.85
+        },
+        {
+          "productId": 67,
+          "quantity": 4,
+          "price": 14.99,
+          "total": 59.96
+        },
+        {
+          "productId": 79,
+          "quantity": 3,
+          "price": 15.99,
+          "total": 47.97
+        }
+      ],
+      "totalItems": 18,
+      "total": 1100.7,
+      "updatedAt": "2026-07-13T00:05:49.000Z"
+    },
+    {
+      "userId": 5,
+      "id": 5,
+      "items": [
+        {
+          "productId": 21,
+          "quantity": 1,
+          "price": 135.99,
+          "total": 135.99
+        },
+        {
+          "productId": 39,
+          "quantity": 2,
+          "price": 386.99,
+          "total": 773.98
+        },
+        {
+          "productId": 65,
+          "quantity": 2,
+          "price": 16.95,
+          "total": 33.9
+        },
+        {
+          "productId": 74,
+          "quantity": 1,
+          "price": 42.95,
+          "total": 42.95
+        }
+      ],
+      "totalItems": 6,
+      "total": 986.82,
+      "updatedAt": "2026-07-14T03:22:47.000Z"
+    },
+    {
+      "userId": 6,
+      "id": 6,
+      "items": [
+        {
+          "productId": 5,
+          "quantity": 3,
+          "price": 121.99,
+          "total": 365.97
+        },
+        {
+          "productId": 18,
+          "quantity": 2,
+          "price": 138.99,
+          "total": 277.98
+        },
+        {
+          "productId": 71,
+          "quantity": 2,
+          "price": 35.99,
+          "total": 71.98
+        },
+        {
+          "productId": 72,
+          "quantity": 4,
+          "price": 20.99,
+          "total": 83.96
+        },
+        {
+          "productId": 86,
+          "quantity": 4,
+          "price": 24.95,
+          "total": 99.8
+        }
+      ],
+      "totalItems": 15,
+      "total": 899.69,
+      "updatedAt": "2026-07-21T08:29:38.000Z"
+    },
+    {
+      "userId": 7,
+      "id": 7,
+      "items": [
+        {
+          "productId": 87,
+          "quantity": 1,
+          "price": 37.95,
+          "total": 37.95
+        },
+        {
+          "productId": 95,
+          "quantity": 1,
+          "price": 143.99,
+          "total": 143.99
+        }
+      ],
+      "totalItems": 2,
+      "total": 181.94,
+      "updatedAt": "2026-07-23T00:32:40.000Z"
+    },
+    {
+      "userId": 8,
+      "id": 8,
+      "items": [
+        {
+          "productId": 31,
+          "quantity": 3,
+          "price": 376.99,
+          "total": 1130.97
+        },
+        {
+          "productId": 49,
+          "quantity": 3,
+          "price": 65.99,
+          "total": 197.97
+        },
+        {
+          "productId": 62,
+          "quantity": 3,
+          "price": 18.95,
+          "total": 56.85
+        },
+        {
+          "productId": 71,
+          "quantity": 1,
+          "price": 35.99,
+          "total": 35.99
+        },
+        {
+          "productId": 80,
+          "quantity": 4,
+          "price": 25.99,
+          "total": 103.96
+        }
+      ],
+      "totalItems": 14,
+      "total": 1525.74,
+      "updatedAt": "2026-07-29T05:20:26.000Z"
+    },
+    {
+      "userId": 9,
+      "id": 9,
+      "items": [
+        {
+          "productId": 15,
+          "quantity": 2,
+          "price": 102.95,
+          "total": 205.9
+        },
+        {
+          "productId": 28,
+          "quantity": 3,
+          "price": 431.95,
+          "total": 1295.85
+        },
+        {
+          "productId": 50,
+          "quantity": 1,
+          "price": 21.99,
+          "total": 21.99
+        },
+        {
+          "productId": 52,
+          "quantity": 1,
+          "price": 21.99,
+          "total": 21.99
+        },
+        {
+          "productId": 100,
+          "quantity": 4,
+          "price": 32.95,
+          "total": 131.8
+        }
+      ],
+      "totalItems": 11,
+      "total": 1677.53,
+      "updatedAt": "2026-07-12T09:39:15.000Z"
+    },
+    {
+      "userId": 10,
+      "id": 10,
+      "items": [
+        {
+          "productId": 11,
+          "quantity": 4,
+          "price": 1099.99,
+          "total": 4399.96
+        },
+        {
+          "productId": 56,
+          "quantity": 2,
+          "price": 17.99,
+          "total": 35.98
+        },
+        {
+          "productId": 92,
+          "quantity": 4,
+          "price": 39.99,
+          "total": 159.96
+        }
+      ],
+      "totalItems": 10,
+      "total": 4595.9,
+      "updatedAt": "2026-07-30T23:37:27.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "id": 1,
+      "items": [
+        {
+          "productId": 29,
+          "quantity": 2,
+          "price": 149.95,
+          "total": 299.9
+        },
+        {
+          "productId": 32,
+          "quantity": 2,
+          "price": 205.99,
+          "total": 411.98
+        },
+        {
+          "productId": 35,
+          "quantity": 1,
+          "price": 97.99,
+          "total": 97.99
+        },
+        {
+          "productId": 41,
+          "quantity": 2,
+          "price": 19.99,
+          "total": 39.98
+        },
+        {
+          "productId": 81,
+          "quantity": 3,
+          "price": 97.99,
+          "total": 293.97
+        }
+      ],
+      "totalItems": 10,
+      "total": 1143.82,
+      "status": "shipped",
+      "createdAt": "2025-11-13T03:59:57.000Z"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "items": [
+        {
+          "productId": 12,
+          "quantity": 2,
+          "price": 134.95,
+          "total": 269.9
+        },
+        {
+          "productId": 41,
+          "quantity": 3,
+          "price": 19.99,
+          "total": 59.97
+        },
+        {
+          "productId": 43,
+          "quantity": 2,
+          "price": 61.99,
+          "total": 123.98
+        },
+        {
+          "productId": 90,
+          "quantity": 1,
+          "price": 58.95,
+          "total": 58.95
+        },
+        {
+          "productId": 97,
+          "quantity": 4,
+          "price": 49.99,
+          "total": 199.96
+        }
+      ],
+      "totalItems": 12,
+      "total": 712.76,
+      "status": "cancelled",
+      "createdAt": "2025-07-07T06:04:25.000Z"
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "items": [
+        {
+          "productId": 64,
+          "quantity": 3,
+          "price": 21.99,
+          "total": 65.97
+        }
+      ],
+      "totalItems": 3,
+      "total": 65.97,
+      "status": "cancelled",
+      "createdAt": "2025-11-22T12:29:30.000Z"
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "items": [
+        {
+          "productId": 57,
+          "quantity": 2,
+          "price": 16.95,
+          "total": 33.9
+        }
+      ],
+      "totalItems": 2,
+      "total": 33.9,
+      "status": "refunded",
+      "createdAt": "2025-07-30T17:33:38.000Z"
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "items": [
+        {
+          "productId": 94,
+          "quantity": 2,
+          "price": 46.95,
+          "total": 93.9
+        },
+        {
+          "productId": 96,
+          "quantity": 4,
+          "price": 103.99,
+          "total": 415.96
+        }
+      ],
+      "totalItems": 6,
+      "total": 509.86,
+      "status": "pending",
+      "createdAt": "2026-05-07T13:03:16.000Z"
+    },
+    {
+      "userId": 2,
+      "id": 6,
+      "items": [
+        {
+          "productId": 8,
+          "quantity": 2,
+          "price": 41.99,
+          "total": 83.98
+        },
+        {
+          "productId": 11,
+          "quantity": 1,
+          "price": 1099.99,
+          "total": 1099.99
+        },
+        {
+          "productId": 45,
+          "quantity": 3,
+          "price": 56.99,
+          "total": 170.97
+        }
+      ],
+      "totalItems": 6,
+      "total": 1354.94,
+      "status": "paid",
+      "createdAt": "2025-03-12T23:00:27.000Z"
+    },
+    {
+      "userId": 2,
+      "id": 7,
+      "items": [
+        {
+          "productId": 16,
+          "quantity": 4,
+          "price": 166.99,
+          "total": 667.96
+        },
+        {
+          "productId": 34,
+          "quantity": 4,
+          "price": 54.95,
+          "total": 219.8
+        }
+      ],
+      "totalItems": 8,
+      "total": 887.76,
+      "status": "delivered",
+      "createdAt": "2025-12-07T06:31:28.000Z"
+    },
+    {
+      "userId": 2,
+      "id": 8,
+      "items": [
+        {
+          "productId": 32,
+          "quantity": 1,
+          "price": 205.99,
+          "total": 205.99
+        },
+        {
+          "productId": 54,
+          "quantity": 4,
+          "price": 16.99,
+          "total": 67.96
+        },
+        {
+          "productId": 93,
+          "quantity": 3,
+          "price": 129.95,
+          "total": 389.85
+        }
+      ],
+      "totalItems": 8,
+      "total": 663.8,
+      "status": "cancelled",
+      "createdAt": "2025-12-25T23:36:40.000Z"
+    },
+    {
+      "userId": 2,
+      "id": 9,
+      "items": [
+        {
+          "productId": 4,
+          "quantity": 3,
+          "price": 160.95,
+          "total": 482.85
+        },
+        {
+          "productId": 31,
+          "quantity": 1,
+          "price": 376.99,
+          "total": 376.99
+        },
+        {
+          "productId": 86,
+          "quantity": 3,
+          "price": 24.95,
+          "total": 74.85
+        }
+      ],
+      "totalItems": 7,
+      "total": 934.69,
+      "status": "cancelled",
+      "createdAt": "2025-11-03T20:43:42.000Z"
+    },
+    {
+      "userId": 2,
+      "id": 10,
+      "items": [
+        {
+          "productId": 7,
+          "quantity": 2,
+          "price": 22.99,
+          "total": 45.98
+        },
+        {
+          "productId": 16,
+          "quantity": 3,
+          "price": 166.99,
+          "total": 500.97
+        },
+        {
+          "productId": 55,
+          "quantity": 1,
+          "price": 26.95,
+          "total": 26.95
+        },
+        {
+          "productId": 56,
+          "quantity": 2,
+          "price": 17.99,
+          "total": 35.98
+        },
+        {
+          "productId": 76,
+          "quantity": 3,
+          "price": 22.95,
+          "total": 68.85
+        }
+      ],
+      "totalItems": 11,
+      "total": 678.73,
+      "status": "shipped",
+      "createdAt": "2025-05-18T11:41:43.000Z"
+    },
+    {
+      "userId": 3,
+      "id": 11,
+      "items": [
+        {
+          "productId": 36,
+          "quantity": 1,
+          "price": 648.99,
+          "total": 648.99
+        },
+        {
+          "productId": 85,
+          "quantity": 3,
+          "price": 15.95,
+          "total": 47.85
+        }
+      ],
+      "totalItems": 4,
+      "total": 696.84,
+      "status": "delivered",
+      "createdAt": "2025-07-27T08:26:25.000Z"
+    },
+    {
+      "userId": 3,
+      "id": 12,
+      "items": [
+        {
+          "productId": 7,
+          "quantity": 1,
+          "price": 22.99,
+          "total": 22.99
+        },
+        {
+          "productId": 20,
+          "quantity": 1,
+          "price": 86.99,
+          "total": 86.99
+        },
+        {
+          "productId": 31,
+          "quantity": 3,
+          "price": 376.99,
+          "total": 1130.97
+        },
+        {
+          "productId": 35,
+          "quantity": 4,
+          "price": 97.99,
+          "total": 391.96
+        },
+        {
+          "productId": 39,
+          "quantity": 2,
+          "price": 386.99,
+          "total": 773.98
+        },
+        {
+          "productId": 87,
+          "quantity": 2,
+          "price": 37.95,
+          "total": 75.9
+        }
+      ],
+      "totalItems": 13,
+      "total": 2482.79,
+      "status": "cancelled",
+      "createdAt": "2025-07-15T01:01:53.000Z"
+    },
+    {
+      "userId": 3,
+      "id": 13,
+      "items": [
+        {
+          "productId": 17,
+          "quantity": 2,
+          "price": 34.95,
+          "total": 69.9
+        },
+        {
+          "productId": 26,
+          "quantity": 3,
+          "price": 75.95,
+          "total": 227.85
+        },
+        {
+          "productId": 49,
+          "quantity": 3,
+          "price": 65.99,
+          "total": 197.97
+        },
+        {
+          "productId": 95,
+          "quantity": 3,
+          "price": 143.99,
+          "total": 431.97
+        }
+      ],
+      "totalItems": 11,
+      "total": 927.69,
+      "status": "shipped",
+      "createdAt": "2025-05-24T00:12:42.000Z"
+    },
+    {
+      "userId": 3,
+      "id": 14,
+      "items": [
+        {
+          "productId": 9,
+          "quantity": 1,
+          "price": 210.95,
+          "total": 210.95
+        },
+        {
+          "productId": 60,
+          "quantity": 3,
+          "price": 8.95,
+          "total": 26.85
+        },
+        {
+          "productId": 70,
+          "quantity": 1,
+          "price": 22.99,
+          "total": 22.99
+        },
+        {
+          "productId": 72,
+          "quantity": 3,
+          "price": 20.99,
+          "total": 62.97
+        },
+        {
+          "productId": 87,
+          "quantity": 1,
+          "price": 37.95,
+          "total": 37.95
+        },
+        {
+          "productId": 91,
+          "quantity": 3,
+          "price": 15.99,
+          "total": 47.97
+        }
+      ],
+      "totalItems": 12,
+      "total": 409.68,
+      "status": "paid",
+      "createdAt": "2026-05-28T12:50:02.000Z"
+    },
+    {
+      "userId": 3,
+      "id": 15,
+      "items": [
+        {
+          "productId": 32,
+          "quantity": 2,
+          "price": 205.99,
+          "total": 411.98
+        },
+        {
+          "productId": 43,
+          "quantity": 4,
+          "price": 61.99,
+          "total": 247.96
+        },
+        {
+          "productId": 46,
+          "quantity": 2,
+          "price": 145.99,
+          "total": 291.98
+        },
+        {
+          "productId": 82,
+          "quantity": 1,
+          "price": 98.99,
+          "total": 98.99
+        },
+        {
+          "productId": 87,
+          "quantity": 1,
+          "price": 37.95,
+          "total": 37.95
+        }
+      ],
+      "totalItems": 10,
+      "total": 1088.86,
+      "status": "shipped",
+      "createdAt": "2025-03-01T15:09:06.000Z"
+    },
+    {
+      "userId": 4,
+      "id": 16,
+      "items": [
+        {
+          "productId": 25,
+          "quantity": 4,
+          "price": 163.99,
+          "total": 655.96
+        },
+        {
+          "productId": 39,
+          "quantity": 4,
+          "price": 386.99,
+          "total": 1547.96
+        },
+        {
+          "productId": 42,
+          "quantity": 4,
+          "price": 88.95,
+          "total": 355.8
+        },
+        {
+          "productId": 99,
+          "quantity": 3,
+          "price": 56.99,
+          "total": 170.97
+        }
+      ],
+      "totalItems": 15,
+      "total": 2730.69,
+      "status": "delivered",
+      "createdAt": "2025-05-31T05:24:57.000Z"
+    },
+    {
+      "userId": 4,
+      "id": 17,
+      "items": [
+        {
+          "productId": 24,
+          "quantity": 3,
+          "price": 258.95,
+          "total": 776.85
+        },
+        {
+          "productId": 43,
+          "quantity": 3,
+          "price": 61.99,
+          "total": 185.97
+        },
+        {
+          "productId": 63,
+          "quantity": 1,
+          "price": 14.95,
+          "total": 14.95
+        }
+      ],
+      "totalItems": 7,
+      "total": 977.77,
+      "status": "refunded",
+      "createdAt": "2026-02-08T06:58:53.000Z"
+    },
+    {
+      "userId": 4,
+      "id": 18,
+      "items": [
+        {
+          "productId": 34,
+          "quantity": 1,
+          "price": 54.95,
+          "total": 54.95
+        },
+        {
+          "productId": 47,
+          "quantity": 1,
+          "price": 109.99,
+          "total": 109.99
+        },
+        {
+          "productId": 70,
+          "quantity": 4,
+          "price": 22.99,
+          "total": 91.96
+        },
+        {
+          "productId": 73,
+          "quantity": 1,
+          "price": 66.95,
+          "total": 66.95
+        },
+        {
+          "productId": 84,
+          "quantity": 2,
+          "price": 131.99,
+          "total": 263.98
+        }
+      ],
+      "totalItems": 9,
+      "total": 587.83,
+      "status": "shipped",
+      "createdAt": "2026-01-21T13:16:38.000Z"
+    },
+    {
+      "userId": 4,
+      "id": 19,
+      "items": [
+        {
+          "productId": 62,
+          "quantity": 4,
+          "price": 18.95,
+          "total": 75.8
+        }
+      ],
+      "totalItems": 4,
+      "total": 75.8,
+      "status": "shipped",
+      "createdAt": "2025-07-03T06:49:38.000Z"
+    },
+    {
+      "userId": 4,
+      "id": 20,
+      "items": [
+        {
+          "productId": 21,
+          "quantity": 1,
+          "price": 135.99,
+          "total": 135.99
+        },
+        {
+          "productId": 90,
+          "quantity": 2,
+          "price": 58.95,
+          "total": 117.9
+        },
+        {
+          "productId": 94,
+          "quantity": 1,
+          "price": 46.95,
+          "total": 46.95
+        }
+      ],
+      "totalItems": 4,
+      "total": 300.84,
+      "status": "shipped",
+      "createdAt": "2025-06-25T12:42:21.000Z"
+    },
+    {
+      "userId": 5,
+      "id": 21,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 4,
+          "price": 220.95,
+          "total": 883.8
+        },
+        {
+          "productId": 16,
+          "quantity": 3,
+          "price": 166.99,
+          "total": 500.97
+        },
+        {
+          "productId": 24,
+          "quantity": 3,
+          "price": 258.95,
+          "total": 776.85
+        },
+        {
+          "productId": 58,
+          "quantity": 2,
+          "price": 43.95,
+          "total": 87.9
+        },
+        {
+          "productId": 92,
+          "quantity": 2,
+          "price": 39.99,
+          "total": 79.98
+        }
+      ],
+      "totalItems": 14,
+      "total": 2329.5,
+      "status": "shipped",
+      "createdAt": "2025-11-19T15:42:20.000Z"
+    },
+    {
+      "userId": 5,
+      "id": 22,
+      "items": [
+        {
+          "productId": 13,
+          "quantity": 4,
+          "price": 46.95,
+          "total": 187.8
+        },
+        {
+          "productId": 77,
+          "quantity": 4,
+          "price": 29.99,
+          "total": 119.96
+        },
+        {
+          "productId": 79,
+          "quantity": 4,
+          "price": 15.99,
+          "total": 63.96
+        },
+        {
+          "productId": 90,
+          "quantity": 3,
+          "price": 58.95,
+          "total": 176.85
+        },
+        {
+          "productId": 95,
+          "quantity": 4,
+          "price": 143.99,
+          "total": 575.96
+        }
+      ],
+      "totalItems": 19,
+      "total": 1124.53,
+      "status": "shipped",
+      "createdAt": "2026-03-19T03:21:13.000Z"
+    },
+    {
+      "userId": 5,
+      "id": 23,
+      "items": [
+        {
+          "productId": 59,
+          "quantity": 2,
+          "price": 12.99,
+          "total": 25.98
+        }
+      ],
+      "totalItems": 2,
+      "total": 25.98,
+      "status": "delivered",
+      "createdAt": "2026-03-12T03:55:57.000Z"
+    },
+    {
+      "userId": 5,
+      "id": 24,
+      "items": [
+        {
+          "productId": 48,
+          "quantity": 3,
+          "price": 70.99,
+          "total": 212.97
+        },
+        {
+          "productId": 56,
+          "quantity": 1,
+          "price": 17.99,
+          "total": 17.99
+        },
+        {
+          "productId": 92,
+          "quantity": 1,
+          "price": 39.99,
+          "total": 39.99
+        }
+      ],
+      "totalItems": 5,
+      "total": 270.95,
+      "status": "refunded",
+      "createdAt": "2025-05-26T02:44:08.000Z"
+    },
+    {
+      "userId": 5,
+      "id": 25,
+      "items": [
+        {
+          "productId": 14,
+          "quantity": 4,
+          "price": 347.99,
+          "total": 1391.96
+        },
+        {
+          "productId": 37,
+          "quantity": 2,
+          "price": 152.95,
+          "total": 305.9
+        },
+        {
+          "productId": 57,
+          "quantity": 4,
+          "price": 16.95,
+          "total": 67.8
+        },
+        {
+          "productId": 68,
+          "quantity": 1,
+          "price": 11.95,
+          "total": 11.95
+        },
+        {
+          "productId": 78,
+          "quantity": 4,
+          "price": 55.95,
+          "total": 223.8
+        }
+      ],
+      "totalItems": 15,
+      "total": 2001.41,
+      "status": "refunded",
+      "createdAt": "2025-11-04T13:17:51.000Z"
+    },
+    {
+      "userId": 6,
+      "id": 26,
+      "items": [
+        {
+          "productId": 60,
+          "quantity": 1,
+          "price": 8.95,
+          "total": 8.95
+        }
+      ],
+      "totalItems": 1,
+      "total": 8.95,
+      "status": "paid",
+      "createdAt": "2025-02-21T16:05:24.000Z"
+    },
+    {
+      "userId": 6,
+      "id": 27,
+      "items": [
+        {
+          "productId": 22,
+          "quantity": 1,
+          "price": 80.99,
+          "total": 80.99
+        },
+        {
+          "productId": 23,
+          "quantity": 4,
+          "price": 36.95,
+          "total": 147.8
+        },
+        {
+          "productId": 27,
+          "quantity": 1,
+          "price": 30.95,
+          "total": 30.95
+        },
+        {
+          "productId": 47,
+          "quantity": 2,
+          "price": 109.99,
+          "total": 219.98
+        },
+        {
+          "productId": 67,
+          "quantity": 4,
+          "price": 14.99,
+          "total": 59.96
+        }
+      ],
+      "totalItems": 12,
+      "total": 539.68,
+      "status": "pending",
+      "createdAt": "2026-02-24T21:41:26.000Z"
+    },
+    {
+      "userId": 6,
+      "id": 28,
+      "items": [
+        {
+          "productId": 14,
+          "quantity": 4,
+          "price": 347.99,
+          "total": 1391.96
+        },
+        {
+          "productId": 52,
+          "quantity": 1,
+          "price": 21.99,
+          "total": 21.99
+        },
+        {
+          "productId": 60,
+          "quantity": 2,
+          "price": 8.95,
+          "total": 17.9
+        },
+        {
+          "productId": 77,
+          "quantity": 2,
+          "price": 29.99,
+          "total": 59.98
+        }
+      ],
+      "totalItems": 9,
+      "total": 1491.83,
+      "status": "cancelled",
+      "createdAt": "2025-04-13T21:33:07.000Z"
+    },
+    {
+      "userId": 6,
+      "id": 29,
+      "items": [
+        {
+          "productId": 2,
+          "quantity": 3,
+          "price": 53.95,
+          "total": 161.85
+        },
+        {
+          "productId": 11,
+          "quantity": 3,
+          "price": 1099.99,
+          "total": 3299.97
+        },
+        {
+          "productId": 82,
+          "quantity": 4,
+          "price": 98.99,
+          "total": 395.96
+        }
+      ],
+      "totalItems": 10,
+      "total": 3857.78,
+      "status": "pending",
+      "createdAt": "2026-04-15T03:05:57.000Z"
+    },
+    {
+      "userId": 6,
+      "id": 30,
+      "items": [
+        {
+          "productId": 40,
+          "quantity": 4,
+          "price": 99.99,
+          "total": 399.96
+        },
+        {
+          "productId": 86,
+          "quantity": 2,
+          "price": 24.95,
+          "total": 49.9
+        }
+      ],
+      "totalItems": 6,
+      "total": 449.86,
+      "status": "shipped",
+      "createdAt": "2026-05-15T18:40:04.000Z"
+    },
+    {
+      "userId": 7,
+      "id": 31,
+      "items": [
+        {
+          "productId": 17,
+          "quantity": 4,
+          "price": 34.95,
+          "total": 139.8
+        },
+        {
+          "productId": 26,
+          "quantity": 4,
+          "price": 75.95,
+          "total": 303.8
+        },
+        {
+          "productId": 29,
+          "quantity": 3,
+          "price": 149.95,
+          "total": 449.85
+        },
+        {
+          "productId": 46,
+          "quantity": 3,
+          "price": 145.99,
+          "total": 437.97
+        },
+        {
+          "productId": 63,
+          "quantity": 2,
+          "price": 14.95,
+          "total": 29.9
+        },
+        {
+          "productId": 88,
+          "quantity": 3,
+          "price": 257.95,
+          "total": 773.85
+        }
+      ],
+      "totalItems": 19,
+      "total": 2135.17,
+      "status": "refunded",
+      "createdAt": "2025-08-10T05:59:56.000Z"
+    },
+    {
+      "userId": 7,
+      "id": 32,
+      "items": [
+        {
+          "productId": 8,
+          "quantity": 3,
+          "price": 41.99,
+          "total": 125.97
+        },
+        {
+          "productId": 49,
+          "quantity": 3,
+          "price": 65.99,
+          "total": 197.97
+        },
+        {
+          "productId": 61,
+          "quantity": 3,
+          "price": 31.95,
+          "total": 95.85
+        },
+        {
+          "productId": 86,
+          "quantity": 1,
+          "price": 24.95,
+          "total": 24.95
+        }
+      ],
+      "totalItems": 10,
+      "total": 444.74,
+      "status": "cancelled",
+      "createdAt": "2025-06-10T11:38:52.000Z"
+    },
+    {
+      "userId": 7,
+      "id": 33,
+      "items": [
+        {
+          "productId": 3,
+          "quantity": 4,
+          "price": 78.99,
+          "total": 315.96
+        },
+        {
+          "productId": 39,
+          "quantity": 3,
+          "price": 386.99,
+          "total": 1160.97
+        },
+        {
+          "productId": 66,
+          "quantity": 1,
+          "price": 12.95,
+          "total": 12.95
+        }
+      ],
+      "totalItems": 8,
+      "total": 1489.88,
+      "status": "delivered",
+      "createdAt": "2026-01-26T03:32:04.000Z"
+    },
+    {
+      "userId": 7,
+      "id": 34,
+      "items": [
+        {
+          "productId": 13,
+          "quantity": 4,
+          "price": 46.95,
+          "total": 187.8
+        },
+        {
+          "productId": 33,
+          "quantity": 1,
+          "price": 37.99,
+          "total": 37.99
+        },
+        {
+          "productId": 63,
+          "quantity": 2,
+          "price": 14.95,
+          "total": 29.9
+        },
+        {
+          "productId": 69,
+          "quantity": 2,
+          "price": 36.95,
+          "total": 73.9
+        },
+        {
+          "productId": 76,
+          "quantity": 3,
+          "price": 22.95,
+          "total": 68.85
+        }
+      ],
+      "totalItems": 12,
+      "total": 398.44,
+      "status": "pending",
+      "createdAt": "2025-03-31T13:41:23.000Z"
+    },
+    {
+      "userId": 7,
+      "id": 35,
+      "items": [
+        {
+          "productId": 8,
+          "quantity": 1,
+          "price": 41.99,
+          "total": 41.99
+        },
+        {
+          "productId": 28,
+          "quantity": 2,
+          "price": 431.95,
+          "total": 863.9
+        },
+        {
+          "productId": 43,
+          "quantity": 3,
+          "price": 61.99,
+          "total": 185.97
+        },
+        {
+          "productId": 52,
+          "quantity": 4,
+          "price": 21.99,
+          "total": 87.96
+        },
+        {
+          "productId": 53,
+          "quantity": 2,
+          "price": 27.95,
+          "total": 55.9
+        },
+        {
+          "productId": 86,
+          "quantity": 1,
+          "price": 24.95,
+          "total": 24.95
+        }
+      ],
+      "totalItems": 13,
+      "total": 1260.67,
+      "status": "delivered",
+      "createdAt": "2025-07-03T15:17:27.000Z"
+    },
+    {
+      "userId": 8,
+      "id": 36,
+      "items": [
+        {
+          "productId": 75,
+          "quantity": 1,
+          "price": 58.99,
+          "total": 58.99
+        }
+      ],
+      "totalItems": 1,
+      "total": 58.99,
+      "status": "shipped",
+      "createdAt": "2025-04-17T22:53:13.000Z"
+    },
+    {
+      "userId": 8,
+      "id": 37,
+      "items": [
+        {
+          "productId": 11,
+          "quantity": 2,
+          "price": 1099.99,
+          "total": 2199.98
+        },
+        {
+          "productId": 57,
+          "quantity": 4,
+          "price": 16.95,
+          "total": 67.8
+        },
+        {
+          "productId": 71,
+          "quantity": 2,
+          "price": 35.99,
+          "total": 71.98
+        }
+      ],
+      "totalItems": 8,
+      "total": 2339.76,
+      "status": "shipped",
+      "createdAt": "2025-06-07T20:58:57.000Z"
+    },
+    {
+      "userId": 8,
+      "id": 38,
+      "items": [
+        {
+          "productId": 2,
+          "quantity": 1,
+          "price": 53.95,
+          "total": 53.95
+        },
+        {
+          "productId": 16,
+          "quantity": 3,
+          "price": 166.99,
+          "total": 500.97
+        },
+        {
+          "productId": 59,
+          "quantity": 1,
+          "price": 12.99,
+          "total": 12.99
+        },
+        {
+          "productId": 87,
+          "quantity": 2,
+          "price": 37.95,
+          "total": 75.9
+        },
+        {
+          "productId": 97,
+          "quantity": 1,
+          "price": 49.99,
+          "total": 49.99
+        }
+      ],
+      "totalItems": 8,
+      "total": 693.8,
+      "status": "refunded",
+      "createdAt": "2026-02-14T22:50:59.000Z"
+    },
+    {
+      "userId": 8,
+      "id": 39,
+      "items": [
+        {
+          "productId": 37,
+          "quantity": 4,
+          "price": 152.95,
+          "total": 611.8
+        },
+        {
+          "productId": 77,
+          "quantity": 3,
+          "price": 29.99,
+          "total": 89.97
+        },
+        {
+          "productId": 94,
+          "quantity": 1,
+          "price": 46.95,
+          "total": 46.95
+        }
+      ],
+      "totalItems": 8,
+      "total": 748.72,
+      "status": "paid",
+      "createdAt": "2025-10-29T01:41:33.000Z"
+    },
+    {
+      "userId": 8,
+      "id": 40,
+      "items": [
+        {
+          "productId": 27,
+          "quantity": 4,
+          "price": 30.95,
+          "total": 123.8
+        },
+        {
+          "productId": 43,
+          "quantity": 3,
+          "price": 61.99,
+          "total": 185.97
+        },
+        {
+          "productId": 50,
+          "quantity": 1,
+          "price": 21.99,
+          "total": 21.99
+        },
+        {
+          "productId": 54,
+          "quantity": 4,
+          "price": 16.99,
+          "total": 67.96
+        },
+        {
+          "productId": 65,
+          "quantity": 3,
+          "price": 16.95,
+          "total": 50.85
+        },
+        {
+          "productId": 87,
+          "quantity": 1,
+          "price": 37.95,
+          "total": 37.95
+        }
+      ],
+      "totalItems": 16,
+      "total": 488.52,
+      "status": "paid",
+      "createdAt": "2025-11-13T03:55:26.000Z"
+    },
+    {
+      "userId": 9,
+      "id": 41,
+      "items": [
+        {
+          "productId": 2,
+          "quantity": 3,
+          "price": 53.95,
+          "total": 161.85
+        },
+        {
+          "productId": 8,
+          "quantity": 4,
+          "price": 41.99,
+          "total": 167.96
+        },
+        {
+          "productId": 44,
+          "quantity": 4,
+          "price": 21.99,
+          "total": 87.96
+        },
+        {
+          "productId": 81,
+          "quantity": 1,
+          "price": 97.99,
+          "total": 97.99
+        },
+        {
+          "productId": 94,
+          "quantity": 2,
+          "price": 46.95,
+          "total": 93.9
+        }
+      ],
+      "totalItems": 14,
+      "total": 609.66,
+      "status": "paid",
+      "createdAt": "2025-02-06T14:34:48.000Z"
+    },
+    {
+      "userId": 9,
+      "id": 42,
+      "items": [
+        {
+          "productId": 95,
+          "quantity": 3,
+          "price": 143.99,
+          "total": 431.97
+        }
+      ],
+      "totalItems": 3,
+      "total": 431.97,
+      "status": "paid",
+      "createdAt": "2026-07-13T08:12:46.000Z"
+    },
+    {
+      "userId": 9,
+      "id": 43,
+      "items": [
+        {
+          "productId": 28,
+          "quantity": 1,
+          "price": 431.95,
+          "total": 431.95
+        },
+        {
+          "productId": 45,
+          "quantity": 4,
+          "price": 56.99,
+          "total": 227.96
+        },
+        {
+          "productId": 46,
+          "quantity": 3,
+          "price": 145.99,
+          "total": 437.97
+        },
+        {
+          "productId": 53,
+          "quantity": 3,
+          "price": 27.95,
+          "total": 83.85
+        }
+      ],
+      "totalItems": 11,
+      "total": 1181.73,
+      "status": "delivered",
+      "createdAt": "2025-03-16T14:30:23.000Z"
+    },
+    {
+      "userId": 9,
+      "id": 44,
+      "items": [
+        {
+          "productId": 39,
+          "quantity": 2,
+          "price": 386.99,
+          "total": 773.98
+        },
+        {
+          "productId": 56,
+          "quantity": 2,
+          "price": 17.99,
+          "total": 35.98
+        },
+        {
+          "productId": 60,
+          "quantity": 2,
+          "price": 8.95,
+          "total": 17.9
+        },
+        {
+          "productId": 68,
+          "quantity": 3,
+          "price": 11.95,
+          "total": 35.85
+        },
+        {
+          "productId": 88,
+          "quantity": 3,
+          "price": 257.95,
+          "total": 773.85
+        }
+      ],
+      "totalItems": 12,
+      "total": 1637.56,
+      "status": "shipped",
+      "createdAt": "2026-03-08T07:49:37.000Z"
+    },
+    {
+      "userId": 9,
+      "id": 45,
+      "items": [
+        {
+          "productId": 3,
+          "quantity": 2,
+          "price": 78.99,
+          "total": 157.98
+        },
+        {
+          "productId": 11,
+          "quantity": 4,
+          "price": 1099.99,
+          "total": 4399.96
+        },
+        {
+          "productId": 38,
+          "quantity": 2,
+          "price": 26.95,
+          "total": 53.9
+        },
+        {
+          "productId": 52,
+          "quantity": 2,
+          "price": 21.99,
+          "total": 43.98
+        },
+        {
+          "productId": 74,
+          "quantity": 3,
+          "price": 42.95,
+          "total": 128.85
+        }
+      ],
+      "totalItems": 13,
+      "total": 4784.67,
+      "status": "delivered",
+      "createdAt": "2026-05-28T16:08:28.000Z"
+    },
+    {
+      "userId": 10,
+      "id": 46,
+      "items": [
+        {
+          "productId": 57,
+          "quantity": 4,
+          "price": 16.95,
+          "total": 67.8
+        },
+        {
+          "productId": 71,
+          "quantity": 3,
+          "price": 35.99,
+          "total": 107.97
+        },
+        {
+          "productId": 72,
+          "quantity": 3,
+          "price": 20.99,
+          "total": 62.97
+        },
+        {
+          "productId": 84,
+          "quantity": 3,
+          "price": 131.99,
+          "total": 395.97
+        },
+        {
+          "productId": 91,
+          "quantity": 3,
+          "price": 15.99,
+          "total": 47.97
+        }
+      ],
+      "totalItems": 16,
+      "total": 682.68,
+      "status": "delivered",
+      "createdAt": "2026-02-14T10:55:57.000Z"
+    },
+    {
+      "userId": 10,
+      "id": 47,
+      "items": [
+        {
+          "productId": 26,
+          "quantity": 4,
+          "price": 75.95,
+          "total": 303.8
+        },
+        {
+          "productId": 68,
+          "quantity": 3,
+          "price": 11.95,
+          "total": 35.85
+        },
+        {
+          "productId": 86,
+          "quantity": 1,
+          "price": 24.95,
+          "total": 24.95
+        },
+        {
+          "productId": 90,
+          "quantity": 1,
+          "price": 58.95,
+          "total": 58.95
+        }
+      ],
+      "totalItems": 9,
+      "total": 423.55,
+      "status": "pending",
+      "createdAt": "2026-02-17T14:31:00.000Z"
+    },
+    {
+      "userId": 10,
+      "id": 48,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 4,
+          "price": 220.95,
+          "total": 883.8
+        },
+        {
+          "productId": 40,
+          "quantity": 2,
+          "price": 99.99,
+          "total": 199.98
+        },
+        {
+          "productId": 80,
+          "quantity": 4,
+          "price": 25.99,
+          "total": 103.96
+        }
+      ],
+      "totalItems": 10,
+      "total": 1187.74,
+      "status": "pending",
+      "createdAt": "2025-03-14T09:47:03.000Z"
+    },
+    {
+      "userId": 10,
+      "id": 49,
+      "items": [
+        {
+          "productId": 6,
+          "quantity": 2,
+          "price": 80.95,
+          "total": 161.9
+        },
+        {
+          "productId": 23,
+          "quantity": 1,
+          "price": 36.95,
+          "total": 36.95
+        },
+        {
+          "productId": 65,
+          "quantity": 4,
+          "price": 16.95,
+          "total": 67.8
+        }
+      ],
+      "totalItems": 7,
+      "total": 266.65,
+      "status": "shipped",
+      "createdAt": "2025-03-11T01:07:05.000Z"
+    },
+    {
+      "userId": 10,
+      "id": 50,
+      "items": [
+        {
+          "productId": 33,
+          "quantity": 1,
+          "price": 37.99,
+          "total": 37.99
+        },
+        {
+          "productId": 34,
+          "quantity": 1,
+          "price": 54.95,
+          "total": 54.95
+        },
+        {
+          "productId": 50,
+          "quantity": 2,
+          "price": 21.99,
+          "total": 43.98
+        }
+      ],
+      "totalItems": 4,
+      "total": 136.92,
+      "status": "delivered",
+      "createdAt": "2025-07-11T13:18:00.000Z"
+    }
   ]
 }
