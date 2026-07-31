@@ -5,11 +5,11 @@ const data = require('../data.json')
 const app = jsonServer.create()
 const router = jsonServer.router(clone(data), { _isFake: true })
 
-const isValidStatus = (status) => Number.isInteger(status) && status >= 100 && status <= 599
+const isValidStatus = (status) => Number.isInteger(status) && status >= 200 && status <= 599
 
 const sendSimulatedError = (res, status) => {
   res.status(status).jsonp({
-    error: true,
+    error: status >= 400,
     status,
     message: `Simulated ${status} response`
   })
@@ -28,7 +28,9 @@ app.use(jsonServer.defaults({
 // Error simulation: append `?_status=500` to any route to force that
 // response status, e.g. GET /posts/1?_status=500
 app.use((req, res, next) => {
-  const status = parseInt(req.query._status, 10)
+  const raw = req.query._status
+  const status = raw !== undefined && /^\d+$/.test(raw) ? parseInt(raw, 10) : NaN
+  if (req.path.startsWith('/error/')) return next()
   if (isValidStatus(status)) return sendSimulatedError(res, status)
   next()
 })
