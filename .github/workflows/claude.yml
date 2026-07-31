@@ -53,10 +53,14 @@ jobs:
       # Repo (or org) variable controlling the automatic PR review. Unset means
       # enabled; set it to `false` to stop reviews running on every PR. The
       auto_pr_review: ${{ vars.CLAUDE_AUTO_PR_REVIEW }}
+    # Ceiling for the called workflow — its jobs can never hold more than this,
+    # so `contents`/`issues` must be `write` for `@claude fix` to commit and for
+    # Claude to post comments. Each job in the reusable workflow narrows this
+    # further (e.g. `@claude ask` runs with `contents: read`).
     permissions:
-      contents: read
+      contents: write
       pull-requests: write
-      issues: read
+      issues: write
       id-token: write
       actions: read
     secrets:
