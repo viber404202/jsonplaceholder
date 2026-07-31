@@ -163,4 +163,26 @@ Available nested routes:
 * https://jsonplaceholder.typicode.com/users/1/todos
 * https://jsonplaceholder.typicode.com/users/1/posts
 
+### Simulate latency
+
+Add an artificial delay (in milliseconds) to a response, useful for testing loading states.
+
+```js
+fetch('https://jsonplaceholder.typicode.com/posts?_delay=2000')
+  .then(response => response.json())
+  .then(json => console.log(json))
+```
+
+You can also set it with an `X-Delay` header instead of a query param:
+
+```js
+fetch('https://jsonplaceholder.typicode.com/posts', {
+    headers: { 'X-Delay': '2000' }
+  })
+  .then(response => response.json())
+  .then(json => console.log(json))
+```
+
+The delay is capped at 10 seconds.
+
 </main>
