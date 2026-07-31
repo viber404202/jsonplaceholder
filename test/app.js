@@ -8,6 +8,104 @@ test('GET /', (t) => {
     .expect(200, (err) => t.end(err))
 })
 
+test('rate limit returns 429 + Retry-After after exceeding the window', (t) => {
+  process.env.RATE_LIMIT_MAX = '3'
+  process.env.RATE_LIMIT_WINDOW_MS = '60000'
+  const client = 'rate-limit-test-client'
+  const max = 3
+  let completed = 0
+
+  const next = () => {
+    completed += 1
+    if (completed <= max) {
+      request(app).get('/posts').set('X-Forwarded-For', client).expect(200, next)
+    } else {
+      // This request should be blocked
+      request(app)
+        .get('/posts')
+        .set('X-Forwarded-For', client)
+        .expect(429, (err, res) => {
+          t.error(err)
+          t.equal(res.body.error, 'Too Many Requests')
+          t.ok(res.headers['retry-after'], 'Retry-After header present')
+          delete process.env.RATE_LIMIT_MAX
+          delete process.env.RATE_LIMIT_WINDOW_MS
+          t.end()
+        })
+    }
+  }
+  next()
+})
+
+test('rate limit tracks clients independently', (t) => {
+  request(app)
+    .get('/posts')
+    .set('X-Forwarded-For', 'another-rate-limit-test-client')
+    .expect(200, (err) => t.end(err))
+})
+
+test('POST /login returns a token', (t) => {
+  request(app)
+    .post('/login')
+    .send({ email: 'Sincere@april.biz', password: 'secret' })
+    .expect(200, (err, res) => {
+      t.error(err)
+      t.ok(res.body.token, 'returns a token')
+      t.equal(res.body.token.split('.').length, 3, 'token looks like a JWT')
+      t.equal(res.body.user.id, 1, 'matches the seeded user')
+      t.end()
+    })
+})
+
+test('POST /login requires credentials', (t) => {
+  request(app)
+    .post('/login')
+    .send({ email: 'someone@example.com' })
+    .expect(400, (err) => t.end(err))
+})
+
+test('POST /register returns a token and new user', (t) => {
+  request(app)
+    .post('/register')
+    .send({ name: 'Ada', email: 'ada@example.com', password: 'secret' })
+    .expect(201, (err, res) => {
+      t.error(err)
+      t.ok(res.body.token, 'returns a token')
+      t.equal(res.body.user.name, 'Ada', 'echoes the new user name')
+      t.end()
+    })
+})
+
+test('GET /profile with a valid token', (t) => {
+  request(app)
+    .post('/login')
+    .send({ email: 'Sincere@april.biz', password: 'secret' })
+    .expect(200, (err, res) => {
+      t.error(err)
+      request(app)
+        .get('/profile')
+        .set('Authorization', 'Bearer ' + res.body.token)
+        .expect(200, (err2, profileRes) => {
+          t.error(err2)
+          t.equal(profileRes.body.email, 'Sincere@april.biz', 'returns the user')
+          t.end()
+        })
+    })
+})
+
+test('GET /profile without a token is rejected', (t) => {
+  request(app)
+    .get('/profile')
+    .expect(401, (err) => t.end(err))
+})
+
+test('GET /profile with a bad token is rejected', (t) => {
+  request(app)
+    .get('/profile')
+    .set('Authorization', 'Bearer not.a.token')
+    .expect(401, (err) => t.end(err))
+})
+
 test('POST /', (t) => {
   const max = 10
   t.plan(max * 3)
