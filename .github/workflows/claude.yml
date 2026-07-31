@@ -49,6 +49,10 @@ jobs:
   claude:
     needs: resolve
     uses: viber404202/claude-workflows/.github/workflows/claude.yml@main
+    with:
+      # Repo (or org) variable controlling the automatic PR review. Unset means
+      # enabled; set it to `false` to stop reviews running on every PR. The
+      auto_pr_review: ${{ vars.CLAUDE_AUTO_PR_REVIEW }}
     permissions:
       contents: read
       pull-requests: write
