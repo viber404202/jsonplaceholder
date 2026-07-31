@@ -17,8 +17,12 @@ on:
 
 jobs:
   resolve:
+    # Superset of the gates inside the reusable workflow; the called jobs still
+    # re-check their own conditions. The CLAUDE_AUTO_PR_REVIEW check is mirrored
+    # here so that opting out costs no Actions job at all on a pull_request.
     if: |
-      github.event_name == 'pull_request' ||
+      (github.event_name == 'pull_request' &&
+        !contains(fromJSON('["false", "0", "off", "no", "disabled"]'), vars.CLAUDE_AUTO_PR_REVIEW)) ||
       contains(github.event.comment.body, '@claude') ||
       contains(github.event.review.body, '@claude') ||
       contains(github.event.issue.body, '@claude') ||
