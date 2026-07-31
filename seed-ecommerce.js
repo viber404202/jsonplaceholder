@@ -285,6 +285,10 @@ CATALOG.forEach(function (entry, index) {
   })
 })
 
+// Read existing data first to derive USERS from actual user count
+var existing = JSON.parse(fs.readFileSync(DATA, 'utf-8'))
+var USERS = existing.users.length
+
 // Line items, drawn from the catalog without repeating a product
 function buildItems(count) {
   var chosen = {}
@@ -326,7 +330,6 @@ function totalPrice(items) {
 }
 
 // One open cart per user, five past orders per user
-var USERS = 10
 var cartId = 0
 var orderId = 0
 
@@ -367,7 +370,6 @@ function check(condition, message) {
   }
 }
 
-var existing = JSON.parse(fs.readFileSync(DATA, 'utf-8'))
 var categoryIds = {}
 var productIds = {}
 var userIds = {}
