@@ -162,5 +162,61 @@ Available nested routes:
 * https://jsonplaceholder.typicode.com/users/1/albums
 * https://jsonplaceholder.typicode.com/users/1/todos
 * https://jsonplaceholder.typicode.com/users/1/posts
+* https://jsonplaceholder.typicode.com/categories/1/products
+* https://jsonplaceholder.typicode.com/users/1/carts
+* https://jsonplaceholder.typicode.com/users/1/orders
+
+### E-commerce resources
+
+Alongside the blog-style resources, JSONPlaceholder serves a small shop: 10 `categories`, 100 `products`, 10 `carts` (one open cart per user) and 50 `orders` (five per user). They're handy for prototyping storefronts, baskets and checkout flows.
+
+```js
+fetch('https://jsonplaceholder.typicode.com/products/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+// Output
+{
+  categoryId: 1,
+  id: 1,
+  title: 'Wireless Noise-Cancelling Headphones',
+  description: '[...]',
+  price: 220.95,
+  stock: 46,
+  rating: 3.1,
+  imageUrl: '[...]',
+  thumbnailUrl: '[...]'
+}
+```
+
+Carts and orders embed their line items, so a basket needs a single request:
+
+```js
+fetch('https://jsonplaceholder.typicode.com/carts/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+// Output
+{
+  userId: 1,
+  id: 1,
+  items: [
+    { productId: 41, quantity: 1, price: 19.99, total: 19.99 },
+    /* ... */
+  ],
+  totalItems: 8,
+  total: 501.92,
+  updatedAt: '[...]'
+}
+```
+
+Orders additionally carry a `status` of `pending`, `paid`, `shipped`, `delivered`, `cancelled` or `refunded`, and a `createdAt` timestamp:
+
+```js
+// Every order for the first user that has shipped
+fetch('https://jsonplaceholder.typicode.com/users/1/orders?status=shipped')
+  .then(response => response.json())
+  .then(json => console.log(json))
+```
 
 </main>

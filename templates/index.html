@@ -87,7 +87,7 @@
       <!-- Resources -->
       <h2>Resources</h2>
       <p>
-        JSONPlaceholder comes with a set of 6 common resources:
+        JSONPlaceholder comes with a set of 10 common resources:
       </p>
 
       <table class="resources">
@@ -127,6 +127,30 @@
           </td>
           <td>10 users</td>
         </tr>
+        <tr>
+          <td>
+            <a href="/categories">/categories</a>
+          </td>
+          <td>10 categories</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/products">/products</a>
+          </td>
+          <td>100 products</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/carts">/carts</a>
+          </td>
+          <td>10 carts</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/orders">/orders</a>
+          </td>
+          <td>50 orders</td>
+        </tr>
       </table>
 
       <p>
@@ -134,7 +158,9 @@
         <b>posts</b> have many
         <b>comments</b>,
         <b>albums</b> have many
-        <b>photos</b>, ... see below for routes examples.
+        <b>photos</b>,
+        <b>categories</b> have many
+        <b>products</b>, ... see below for routes examples.
       </p>
 
       <!-- Routes -->
@@ -172,6 +198,18 @@
           <td>GET</td>
           <td>
             <a href="/posts?userId=1">/posts?userId=1</a>
+          </td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/categories/1/products">/categories/1/products</a>
+          </td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/users/1/orders">/users/1/orders</a>
           </td>
         </tr>
         <tr>

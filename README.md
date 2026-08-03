@@ -27,6 +27,8 @@ I hope you will find it useful.
 * No registration
 * Zero-config
 * Basic API
+* Blog resources (posts, comments, albums, photos, todos, users)
+* E-commerce resources (categories, products, carts, orders)
 * "Has many" relationships
 * Filters and nested resources
 * Cross-domain ([CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) and [JSONP](http://en.wikipedia.org/wiki/JSONP))
