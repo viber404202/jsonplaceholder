@@ -61,7 +61,6 @@ jobs:
       contents: write
       pull-requests: write
       issues: write
-      id-token: write
       actions: read
     secrets:
       actor_token: ${{ secrets[needs.resolve.outputs.actor_secret_name] }}
